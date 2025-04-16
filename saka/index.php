@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<!-- テストコミット -->
+
 	<style>
 		.sns_item {
 			padding: 60px 0;
