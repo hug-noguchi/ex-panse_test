@@ -1,0 +1,118 @@
+@charset "utf-8";
+/*@import url(https://fonts.googleapis.com/css?family=Rajdhani);*/
+/* CSS Document */
+
+.access_container {
+  padding: 60px 0;
+}
+.access_container .main_content > div.element {
+  background: var(--main-bg2color);
+}
+.access_container .shizuoka_sub_article {
+  margin-bottom: 0;
+}
+main article.sub_article {
+  padding: 20px;
+}
+main article.sub_article {
+  padding: 20px;
+}
+.access_text {
+  margin-top: 10px;
+}
+.access_text,
+.tel_text {
+  display: flex;
+  align-items: center;
+}
+.access_text p,
+.tel_text p {
+  padding-left: 20px;
+}
+.tel_text {
+  margin: 10px 0;
+}
+h4.lecture {
+  font-size: 2.2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: inherit;
+}
+.tel_a,
+.tel_a:hover {
+  font-size: 2.6rem;
+  color: var(--main-color);
+}
+.map {
+  margin-top: 20px;
+}
+
+@media (max-width: 1023px) {
+  .access_container {
+    padding: 40px 0 0;
+  }
+  .access_images {
+    display: flex;
+    justify-content: space-between;
+  }
+  .access_images .col-md-6 {
+    padding: 0;
+    width: 49%;
+  }
+  .access_images .col-md-6 p {
+    margin-bottom: 0;
+  }
+  h4.lecture {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+  .tel_a,
+  .tel_a:hover {
+    font-size: 2.3rem;
+  }
+  .map iframe {
+    height: 200px;
+  }
+}
+
+@media (min-width: 481px) {
+  .left_sp {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  main article.sub_article {
+    padding: 10px;
+  }
+  .section_h3 {
+    line-height: 1.4;
+    letter-spacing: -0.1px;
+  }
+  p {
+    line-height: 1.6;
+  }
+  .access_text,
+  .tel_text {
+    display: block;
+  }
+  .access_text p,
+  .tel_text p {
+    font-size: 1.6rem;
+    padding-left: 0;
+  }
+  .station {
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+  .point_sp {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .following .briefing a {
+    padding: 23px 4px;
+  }
+}

@@ -1,0 +1,146 @@
+@charset "utf-8";
+/*@import url(https://fonts.googleapis.com/css?family=Rajdhani);*/
+/* CSS Document */
+
+@media (max-width: 1023px) {
+  .container {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .concept_box {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  main .container .main_content .menu_list_sub > div {
+    margin-bottom: 0;
+  }
+
+  main .container .border_box {
+    margin: 0 2%;
+  }
+
+  main .container .border_box p {
+    text-align: left;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn_concept {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  main article.sub_article .row > div {
+    padding-bottom: 10px;
+  }
+
+  .section_h4 {
+    padding: 0 0 10px !important;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .section_h3 {
+    padding-top: 40px;
+    line-height: 1.4;
+  }
+
+  .sub_title {
+    padding-top: 0;
+  }
+
+  .kyoukai .section_h3 {
+    padding-bottom: 20px;
+  }
+
+  .concept_image {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .concept_image .concept_image_box {
+    width: 48%;
+  }
+
+  .concept_image .concept_image_box div {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  main .content_box {
+    padding: 20px 0;
+  }
+
+  .btn_p {
+    margin: 0;
+  }
+
+  .concept_end {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+
+.sunil_name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.sunil_text span {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--main-color3);
+}
+
+.sunil01 {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+  .sunil_image {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.sub_title {
+  padding: 20px 0;
+}
+
+main article.sub_article {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: var(--main-bg2color);
+}
+
+.concept_image {
+  padding-top: 20px;
+}
+
+.col-md-3 {
+  padding-right: 15px;
+  padding-left: 0;
+}
+
+.concept_image04 {
+  padding-right: 0;
+}
+
+main .container .border_box {
+  margin: 20px auto 0;
+}
+
+@media (min-width: 641px) {
+  .concept_image04 {
+    width: 23.9%;
+  }
+}
+
+@media (max-width: 640px) {
+  .section_h3 {
+    line-height: 1.4;
+  }
+}

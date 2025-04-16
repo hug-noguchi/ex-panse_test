@@ -1,0 +1,327 @@
+@charset "utf-8";
+/*@import url(https://fonts.googleapis.com/css?family=Rajdhani);*/
+/* CSS Document */
+
+main {
+  padding-bottom: 60px;
+}
+
+.tab {
+  margin: 60px auto 0;
+}
+
+.tab button {
+  background-color: var(--main-bg2color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  padding: 25px 0;
+  text-align: center;
+  width: calc(100% / 2);
+  border: unset;
+}
+
+.tab button:hover {
+  opacity: 0.7;
+}
+
+.tab button.active {
+  color: var(--main-color3);
+  font-weight: bold;
+  background-color: #2c0707;
+  border-top: 1px solid var(--main-buttoncolor);
+}
+
+.tabcontent {
+  display: block;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0px 20px;
+  width: 100%;
+}
+
+.tabcontent.show {
+  display: block;
+}
+
+.container {
+  padding: 100px 10px;
+  background-color: #2c0707;
+}
+
+.title_price .price {
+  margin: 0;
+  font-weight: 800;
+  font-size: 6rem;
+}
+
+.menu3_present {
+  padding-top: 10px;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+.menu_list .menu_box .content .text_box {
+  padding: 3%;
+}
+.menu_list .menu_box .content .thum_box .title_price {
+  line-height: 200%;
+}
+.menu_list .menu_box .menu3 .thum_box .title_price {
+  bottom: 2%;
+}
+.menu1 .price_text,
+.menu2 .price_text {
+  padding-bottom: 0 !important;
+}
+.course_menu.menu_list .main_content .stepupmenu_box .content {
+  margin-bottom: 20px;
+}
+.course_menu.menu_list .main_content .stepupmenu_box {
+  padding-top: 20px !important;
+}
+.course_menu.menu_list .main_content .stepupmenu_box .content .text_box .title_price {
+  padding-bottom: 28px;
+}
+.course_menu.menu_list .main_content .stepupmenu_box .content .text_box .title_price .title_box .title {
+  padding-bottom: 20px;
+}
+.stepup3 #btn_cource {
+  position: unset;
+  transform: unset;
+  -webkit-transform: unset;
+}
+.stepup3 a {
+  padding: 2% 2% 5% !important;
+}
+.course_menu.menu_list .menu_box .menu3 {
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .title_price .pc {
+    display: block;
+  }
+  .title_price .sp {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  main {
+    padding-bottom: 40px;
+  }
+  .title_price .pc {
+    display: none;
+  }
+  .title_price .price {
+    display: block;
+  }
+  .menu2_price {
+    bottom: 3% !important;
+  }
+  .menu3_price {
+    bottom: 1% !important;
+  }
+  .menu3_price .title_box .title span {
+    letter-spacing: -0.8px !important;
+  }
+  .menu3_price .title_price .price {
+    padding-top: 10px;
+  }
+  .course_menu .menu3_price .price span.notes {
+    font-size: 1rem;
+  }
+  .menu3_present {
+    line-height: 1;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .tab {
+    margin: 40px auto 0;
+  }
+
+  .container {
+    padding: 80px 0;
+  }
+}
+
+.one-on-one_lead {
+  font-size: 42px;
+  line-height: 1.4;
+}
+
+.one-on-one_lead span::before,
+.one-on-one_lead span::after {
+  content: "";
+  position: absolute;
+  bottom: -0.8rem;
+  width: 3px;
+  height: 9.025rem;
+}
+
+@media only screen and (max-width: 1023px) {
+  .one-on-one_lead {
+    font-size: 2.4rem;
+    line-height: 1.4;
+    letter-spacing: -1px;
+  }
+}
+
+@media only screen and (min-width: 781px) {
+  .one-on-one {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 780px) {
+  .one-on-one {
+    padding: 40px 0 0;
+  }
+}
+
+/* @media only screen and (min-width: 641px) {
+  .one-on-one_txt p::before {
+    bottom: -18%;
+    left: -24%;
+  }
+} */
+
+@media (max-width: 640px) {
+  .one-on-one_lead span::before,
+  .one-on-one_lead span::after {
+    bottom: -0.5rem;
+    height: 5.025rem;
+  }
+  .one-on-one_lead span::before {
+    left: -11px;
+  }
+  .one-on-one_lead span::after {
+    right: -10px;
+  }
+}
+
+.white_box {
+  margin: 5% 0;
+}
+
+.btn_details {
+  margin-top: 5%;
+}
+
+.course_menu.menu_list .menu_box .btn_ao_b {
+  margin-top: 5%;
+  max-width: 310px;
+}
+
+@media (max-width: 1023px) {
+  .title_price .price span.notes {
+    margin-top: 34px;
+  }
+}
+@media (max-width: 640px) {
+  .tabcontent .container {
+    padding: 40px 0;
+  }
+  .menu_list .menu_box .content.menu1 .thum_box,
+  .menu_list .menu_box .content.menu3 .thum_box {
+    min-height: 550px;
+  }
+  .menu_list .menu_box .content.menu2 .thum_box {
+    min-height: 500px;
+  }
+  .menu_list .menu_box .content.online .thum_box .title_price {
+    bottom: 10% !important;
+  }
+  .menu_list .menu_box .content.menu2 .thum_box .title_price,
+  .menu_list .menu_box .content.menu3 .thum_box .title_price {
+    bottom: 3% !important;
+  }
+  .menu_list .menu_box .content.online .thum_box {
+  }
+  .menu_list .menu_box .content.india .thum_box,
+  .menu_list .menu_box .content.hawaii .thum_box,
+  .menu_list .menu_box .content.bari .thum_box {
+    min-height: 360px;
+  }
+  .course_menu.menu_list .menu_box .content {
+    margin-bottom: 20px;
+  }
+  .hawaii_lead {
+    font-size: 44% !important;
+  }
+  .bari_lead {
+    font-size: 36% !important;
+  }
+}
+
+/* 共通 */
+.course_menu .campaign {
+  font-size: 1.6rem;
+}
+.course_menu .campaign span {
+  font-size: 2.4rem;
+}
+
+.menu3_price .title_price .price {
+  padding-top: 10px;
+}
+
+@media (min-width: 481px) {
+  .left_sp {
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn_details .btn_ao_b {
+    max-width: 100%;
+  }
+}
+
+/* 背景白ベースへ変更 */
+@media only screen and (min-width: 781px) {
+  .one-on-one .one-on-one_txt::before {
+    width: 28%;
+    bottom: -36%;
+    left: -34%;
+  }
+  .one-on-one .one-on-one_txt::after {
+    width: 28%;
+    bottom: -36%;
+    right: -34%;
+  }
+}
+
+@media only screen and (min-width: 641px) {
+  .one-on-one_txt p::before {
+    bottom: -18%;
+    left: -24%;
+  }
+}
+.tab button.active {
+  background: var(--main-bg2color);
+  border-top: 1px solid var(--main-color3);
+}
+.tabcontent .container {
+  background: var(--main-bg2color);
+}
+.course_menu.menu_list .menu_box .content {
+  background: var(--main-bgcolor);
+}
+.white_box {
+  color: var(--main-bgcolor);
+  background: var(--main-color);
+}
+.recommend span {
+  color: var(--main-color);
+  background: var(--main-bg2color);
+}
+.course_menu.menu_list .main_content .stepupmenu_box .content {
+  background-color: var(--main-bgcolor);
+}
+.stepupmenu_box .content > a {
+  color: var(--main-color);
+}
