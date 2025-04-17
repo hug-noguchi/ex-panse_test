@@ -1037,7 +1037,14 @@ menu_list
 -----------------------------------*/
 
 .menu_list {
-  background: var(--main-bg2color);
+  padding-bottom: 144px !important;
+  /* background: var(--main-bg2color); */
+}
+
+@media all and (max-width: 480px) {
+  .menu_list {
+    padding-bottom: 88px !important;
+  }
 }
 
 .menu_list .menu_box {
@@ -1161,6 +1168,27 @@ menu_list
   }
   .menu2_text_box {
     height: 156px;
+  }
+}
+
+.menu_list .btn_course_list {
+  bottom: -23% !important;
+}
+@media all and (max-width: 1023px) {
+  .menu_list .btn_course_list {
+    bottom: -5% !important;
+  }
+}
+@media all and (max-width: 480px) {
+  .menu_list .btn_course_list {
+    bottom: -6% !important;
+    width: 100%;
+  }
+  .menu_list .btn_course_list .btn_ao_b {
+    max-width: 100%;
+  }
+  .menu_list .btn_details .btn_ao_b {
+    width: 100%;
   }
 }
 
@@ -5880,7 +5908,7 @@ ol {
 }
 @media only screen and (max-width: 1023px) {
   .menu1_price {
-    bottom: -1% !important;
+    bottom: 4% !important;
   }
   .menu1 .campaign,
   .menu2 .campaign {
@@ -6454,6 +6482,8 @@ ul {
 
 .menu1 .present {
   padding-top: 5px;
+  letter-spacing: -0.4px;
+  line-height: 1.4;
 }
 
 @media (min-width: 481px) {
@@ -6855,5 +6885,57 @@ ul {
   .menu1 .title_price .price,
   .menu2 .title_price .price {
     margin-bottom: 24px;
+  }
+}
+
+/*------------------------------------
+代表理事
+------------------------------------*/
+.teacher_container .sunil article {
+  background: var(--main-bg2color);
+  padding: 40px;
+  margin-bottom: 0;
+}
+.teacher_container .sunil_name {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.teacher_container .sunil_text span {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--main-color3);
+}
+.teacher_container .sunil01 {
+  padding-bottom: 20px;
+}
+.teacher_container .campany_box {
+  padding-bottom: 0;
+}
+@media (max-width: 1023px) {
+  .teacher_container .sunil article {
+    padding: 20px;
+  }
+  .teacher_container .sunil_image {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .teacher_container .sunil_text {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (max-width: 640px) {
+  .teacher_container .sunil_image {
+    padding-bottom: 10px;
+  }
+  .teacher_container .sunil_text {
+    padding-bottom: 10px;
+  }
+  .teacher_container .campany_box {
+    padding: 0 !important;
+    margin-bottom: 0;
+  }
+  .teacher_container .school_history {
+    padding: 0 !important;
   }
 }
