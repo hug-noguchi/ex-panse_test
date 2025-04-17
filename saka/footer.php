@@ -97,7 +97,6 @@
 			<div class="footer_box">
 				<ul class="footer_nav">
 					<li><a href="<?php bloginfo('url'); ?>/concept/">スクールの特長</a></li>
-					<li><a href="<?php bloginfo('url'); ?>/concept/">スクールの特長（コンセプト）</a></li>
 					<li><a href="<?php bloginfo('url'); ?>/teacher/">代表挨拶・講師紹介・協会概要</a></li>
 					<li><a href="<?php bloginfo('url'); ?>/review/">卒業生の声</a></li>
 					<li><a href="<?php bloginfo('url'); ?>/menu_india/">インド校</a></li>
