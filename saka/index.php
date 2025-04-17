@@ -481,6 +481,11 @@
 								</div>
 							</article>
 						</div>
+						<div class="btn_details btn_course_list">
+							<a href="/course/" class="btn_ao_b">
+								<span class="b__text">コース⼀覧を見る</span>
+							</a>
+						</div>
 					</div>
 				</article>
 			</div>
