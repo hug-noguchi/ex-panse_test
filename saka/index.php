@@ -218,7 +218,7 @@
 									</p>
 								</div>
 								<p class="campaign">
-									春の特別キャンペーン <br class="campaign_pc">期間限定<span>3/31</span>まで
+									春の特別キャンペーン <br class="campaign_pc">期間限定<span>4/30</span>まで
 								</p>
 								<p class="price">
 									<span class="price_label">受講料</span>
@@ -303,7 +303,7 @@
 										</p>
 									</div>
 									<p class="campaign">
-										春の特別キャンペーン <br class="campaign_pc">期間限定<span>3/31</span>まで
+										春の特別キャンペーン <br class="campaign_pc">期間限定<span>4/30</span>まで
 									</p>
 									<p class="price">
 										<span class="price_label">受講料</span>
@@ -350,7 +350,7 @@
 										</p>
 									</div>
 									<p class="campaign">
-										春の特別キャンペーン <br class="campaign_pc">期間限定<span>3/31</span>まで
+										春の特別キャンペーン <br class="campaign_pc">期間限定<span>4/30</span>まで
 									</p>
 									<p class="price price_usually">
 										<span class="price_label">受講料</span>
