@@ -217,9 +217,7 @@
 										基本コース
 									</p>
 								</div>
-								<p class="campaign">
-									春の特別キャンペーン <br class="campaign_pc">期間限定<span>4/30</span>まで
-								</p>
+								<?php echo do_shortcode('[campaign_date]'); ?>
 								<p class="price">
 									<span class="price_label">受講料</span>
 									<span class="price_text">&yen;<span class="price_line">252,000</span></span>
@@ -302,9 +300,7 @@
 											じっくりコース
 										</p>
 									</div>
-									<p class="campaign">
-										春の特別キャンペーン <br class="campaign_pc">期間限定<span>4/30</span>まで
-									</p>
+									<?php echo do_shortcode('[campaign_date]'); ?>
 									<p class="price">
 										<span class="price_label">受講料</span>
 									</p>
@@ -349,9 +345,7 @@
 											独立・開業コース
 										</p>
 									</div>
-									<p class="campaign">
-										春の特別キャンペーン <br class="campaign_pc">期間限定<span>4/30</span>まで
-									</p>
+									<?php echo do_shortcode('[campaign_date]'); ?>
 									<p class="price price_usually">
 										<span class="price_label">受講料</span>
 									</p>

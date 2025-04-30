@@ -201,7 +201,7 @@ add_action( 'pre_get_posts', 'change_posts_per_page' );
 function campaign_end_date() {
   date_default_timezone_set('Asia/Tokyo'); // タイムゾーンを設定
   $current_time = strtotime(date('Y-m-d H:i'));
-  $campaign_end_date = strtotime('2024-5-31 23:59');
+  $campaign_end_date = strtotime('2025-4-30 23:59');
 
   ob_start(); // 出力バッファリングを開始
 
@@ -209,9 +209,9 @@ function campaign_end_date() {
   <p class="campaign">
       春の特別キャンペーン <br class="campaign_pc">期間限定<span>
       <?php if ($current_time < $campaign_end_date) { ?>
-          5/31
+          4/30
       <?php } else { ?>
-          6/30
+          5/31
       <?php } ?>
       </span>まで
   </p>
