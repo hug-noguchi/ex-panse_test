@@ -1,6 +1,9 @@
 <?php get_header(2); ?>
 
 	<style>
+		.wpp_box {
+			color: #380909;;
+		}
 		.read_time {
 			text-align: right;
 		}
