@@ -578,21 +578,27 @@ main_img
 ------------------------------------*/
 
 #main_img {
-  position: relative;
+  /* position: relative;
   width: 100%;
   margin: 0 auto;
   height: 930px;
-  position: relative;
+  position: relative; */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 100%;
 }
 
-#main_img article {
+/* #main_img article {
   position: absolute;
-}
+} */
 
 @media all and (min-width: 1024px) {
   #main_img {
-    background: url("../../images/header.webp") top center no-repeat fixed;
-    background-size: cover;
+    /* background: url("../../images/fv_pc.jpg") top center no-repeat fixed;
+    background-size: cover; */
+    background-image: url(../../images/fv_pc.jpg);
+    aspect-ratio: 1920 / 700;
   }
 
   #main_img article {
@@ -649,9 +655,11 @@ main_img
 
 @media all and (max-width: 1023px) {
   #main_img {
-    background: url("../../images/header_sp.webp") top center no-repeat;
+    /* background: url("../../images/fv_sp.jpg") top center no-repeat;
     background-size: cover;
-    height: 600px;
+    height: 540px; */
+    background-image: url(../../images/fv_sp.jpg);
+    aspect-ratio: 780 / 1080;
   }
   #main_img .logo {
     position: absolute;
@@ -661,7 +669,7 @@ main_img
   }
 
   #main_img article {
-    bottom: 13%;
+    bottom: 3%;
     left: 2%;
     color: #fff;
   }

@@ -13,7 +13,7 @@
 	</style>
 
 	<div id="main_img">
-		<p class="logo sp"><picture><source type="image/webp" srcset="images/logo.webp"><img src="<?php bloginfo('url'); ?>/images/logo.png" alt="expamse..School"></picture></p>
+		<!-- <p class="logo sp"><picture><source type="image/webp" srcset="images/logo.webp"><img src="<?php bloginfo('url'); ?>/images/logo.png" alt="expamse..School"></picture></p>
 		<article>
 			<p class="fv_badge pc"><img src="<?php bloginfo('url'); ?>/images/fv_badge.png" alt="注目のアーユルヴェーダ専門サロンNo.1"></p>
 			<p class="fv_badge sp"><img src="<?php bloginfo('url'); ?>/images/fv_badge_sp.png" alt="注目のアーユルヴェーダ専門サロンNo.1"></p>
@@ -22,7 +22,7 @@
 			<p class="text2">恵比寿・池袋・銀座に<br class="sp">サロンを展開している<br>
 			アーユルヴェーダサロン「Expanse..」の技術を、<br>
 			開業までマンツーマンで学べます。</p>
-		</article>
+		</article> -->
 	</div>
 
 	<main class="top">
