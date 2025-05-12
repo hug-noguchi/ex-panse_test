@@ -578,25 +578,14 @@ main_img
 ------------------------------------*/
 
 #main_img {
-  /* position: relative;
-  width: 100%;
-  margin: 0 auto;
-  height: 930px;
-  position: relative; */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
   width: 100%;
 }
 
-/* #main_img article {
-  position: absolute;
-} */
-
 @media all and (min-width: 1024px) {
   #main_img {
-    /* background: url("../../images/fv_pc.jpg") top center no-repeat fixed;
-    background-size: cover; */
     background-image: url(../../images/fv_pc.jpg);
     aspect-ratio: 1920 / 700;
   }
@@ -655,9 +644,6 @@ main_img
 
 @media all and (max-width: 1023px) {
   #main_img {
-    /* background: url("../../images/fv_sp.jpg") top center no-repeat;
-    background-size: cover;
-    height: 540px; */
     background-image: url(../../images/fv_sp.jpg);
     aspect-ratio: 780 / 1080;
   }
@@ -2460,7 +2446,7 @@ pagination
 
 .pagination {
   color: var(--main-bgcolor);
-  background: #fff;
+  background: var(--main-color);
   border-radius: 4px;
 }
 
