@@ -70,7 +70,7 @@
 					<li><a href="<?php bloginfo('url'); ?>/course/">コースのご案内</a>
 						<ul class="sub_nav">
 							<li><a href="<?php bloginfo('url'); ?>/menu_online/">アーユルヴェーダベーシックマスターコース</a></li>
-							<li><a href="<?php bloginfo('url'); ?>/menu_menu1/">基本コース</a></li>
+							<li><a href="<?php bloginfo('url'); ?>/menu_menu1/">基礎コース</a></li>
 							<li><a href="<?php bloginfo('url'); ?>/menu_menu2/">じっくりコース</a></li>
 							<li><a href="<?php bloginfo('url'); ?>/menu_menu3/">独立・開業コース</a></li>
 							<li><a href="<?php bloginfo('url'); ?>/menu_stepup#step1_link">シローダーラーコース</a></li>

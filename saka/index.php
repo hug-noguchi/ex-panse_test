@@ -211,10 +211,9 @@
 						<div class="thum_box">
 							<div class="title_price">
 								<div class="title_box">
-									<p class="time"><picture><source type="image/webp" srcset="<?php bloginfo('url'); ?>/images/hour18.webp"><img src="<?php bloginfo('url'); ?>/images/hour18.png" alt="jmr"></picture></p>
 									<p class="title title_basic">
 										<span>アーユルヴェーダの基礎から学ぶ</span><br>
-										基本コース
+										基礎コース
 									</p>
 								</div>
 								<?php echo do_shortcode('[campaign_date]'); ?>
@@ -225,9 +224,6 @@
 								<p class="kyozai pc">
 									<span class="notes">（教材費+ドーシャ別オイル代込）/協会会員費（初年度無料）</span>
 								</p>
-								<!-- <p class="kyozai sp">
-									<span class="notes">（教材費+ドーシャ別オイル代込）<br>協会会員費（初年度無料）</span>
-								</p> -->
 								<div class="campaign_code">
 									<p>
 										10%割引　『キャンペーンコード:expa2025』<br>
@@ -405,7 +401,6 @@
 											</div>
 											<p class="price">
 												<span class="price_label">受講料</span><span class="price_text">&yen;85,800</span>
-												<!-- <span class="notes">（ダーラポット+オイル代込）</span> -->
 											</p>
 											<p class="kyozai">
 												<span class="notes">（ダーラポット+オイル代込）</span>
@@ -456,7 +451,6 @@
 												<p class="title">
 													<span>さらに専門的にじっくり学ぶ</span><br>
 													セラピストとして<br>大切なこと
-													<!-- <span class="stepup3_title">セラピストとして<br>大切なこと</span> -->
 												</p>
 											</div>
 											<p class="price">

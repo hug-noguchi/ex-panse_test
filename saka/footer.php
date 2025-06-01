@@ -25,38 +25,6 @@
 				<address>Copyright (C) 2013- R&amp;M Co.,Ltd. All Rights Reserved.</address>
 			</div>
 
-			<!-- <ul class="footer_nav">
-				<li><a href="<?php bloginfo('url'); ?>/concept/">スクールの特長</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/course/">コースのご案内</a>
-					<ul class="sub_nav">
-						<li><a href="<?php bloginfo('url'); ?>/menu_online/">アーユルヴェーダベーシックマスターコース</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/menu_menu1/">基本コース</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/menu_menu2/">じっくりコース</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/menu_menu3/">独立・開業コース</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/menu_stepup#step1_link">シローダーラーコース</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/menu_stepup#step2_link">フェイシャルコース</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/menu_stepup#step3_link">セラピストとして大切なこと</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/menu_india/">インド校</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/menu_hawaii/">ハワイ校</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/menu_bari/">バリ校</a></li>
-					</ul>
-				</li>
-				<li><a href="<?php bloginfo('url'); ?>/ayurveda_about/">アーユルヴェーダとは</a></li>
-			</ul>
-			<ul class="footer_nav">
-				<li><a href="<?php bloginfo('url'); ?>/teacher/">代表挨拶・講師紹介</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/access/">アクセス</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/diagnose.php" target="_blank">アーユルヴェーダ体質診断</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/info/">インフォメーション</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/blog/">ブログ</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/review/">卒業生の声</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/faq/">よくあるご質問</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/privacypolicy/">プライバシーポリシー</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/contact/">お問い合わせ</a></li>
-				<li><a href="<?php bloginfo('url'); ?>#top_company">会社概要</a></li>
-				<li><a href="<?php bloginfo('url'); ?>/memberstore/">ボランタリー事業加盟店募集</a></li>
-			</ul> -->
-
 			<style>
 				.footer article .address {
 					width: 40%;
@@ -107,7 +75,7 @@
 					<li><a href="<?php bloginfo('url'); ?>/course/">コースのご案内</a>
 						<ul class="sub_nav">
 							<li><a href="<?php bloginfo('url'); ?>/menu_online/">アーユルヴェーダベーシックマスターコース</a></li>
-							<li><a href="<?php bloginfo('url'); ?>/menu_menu1/">基本コース</a></li>
+							<li><a href="<?php bloginfo('url'); ?>/menu_menu1/">基礎コース</a></li>
 							<li><a href="<?php bloginfo('url'); ?>/menu_menu2/">じっくりコース</a></li>
 							<li><a href="<?php bloginfo('url'); ?>/menu_menu3/">独立・開業コース</a></li>
 							<li><a href="<?php bloginfo('url'); ?>/menu_stepup#step1_link">シローダーラーコース</a></li>
