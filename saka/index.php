@@ -211,9 +211,10 @@
 						<div class="thum_box">
 							<div class="title_price">
 								<div class="title_box">
+									<p class="time"><picture><source type="image/webp" srcset="<?php bloginfo('url'); ?>/images/hour18.webp"><img src="<?php bloginfo('url'); ?>/images/hour18.png" alt="jmr"></picture></p>
 									<p class="title title_basic">
 										<span>アーユルヴェーダの基礎から学ぶ</span><br>
-										基礎コース
+										基本コース
 									</p>
 								</div>
 								<?php echo do_shortcode('[campaign_date]'); ?>
