@@ -7,6 +7,15 @@
 		.read_time {
 			text-align: right;
 		}
+		.date {
+			padding: 40px 0 20px;
+		}
+		.section_h3 {
+			padding: 0 0 20px 0;
+		}
+		.pc {
+			display: inline;
+		}
 		@media only screen and (min-width: 481px) {
 			.sp {
 				display: none!important;
@@ -16,11 +25,17 @@
 			.pc {
 				display: none;
 			}
+			  .sp {
+				display: inline;
+			}
 			#breadcrumb {
 				display: block;
 			}
 			.breadcrumb_top {
 				display: flex;
+			}
+			.date {
+				line-height: 1.4;
 			}
 		}
 	</style>
@@ -95,32 +110,32 @@
 						?>
 
 						<?php if (have_posts()) : ?>
-								<?php while (have_posts()) : the_post(); ?>
-
-										<div class="">
-												<h3 class="section_h3">
-														<p class="date"><?php the_date(); ?></p>
-														<?php the_title(); ?>
-												</h3>
-												<p class="read_time">
-													<?php echo sprintf('読了予測：約%s分', get_time_to_content_read(get_the_content())); ?>
-												</p>
-												<div class="single_box">
-													<?php if (has_post_thumbnail()) : ?>
-														<div class="post-thumbnail">
-															<?php the_post_thumbnail('full'); ?>
-														</div>
-													<?php endif; ?>
-													<p><?php the_content(); ?></p>
-													<div class="single_reserve">
-														<strong class="bold">「お問い合わせ」</strong><br>
-														&rArr;　<a href="/contact/"><strong class="blue">お問い合わせください。</strong></a>
-													</div>
-												</div>
-												<!-- <p><?php the_content(); ?></p> -->
+							<?php while (have_posts()) : the_post(); ?>
+								<div>
+									<p class="date">
+										記事公開日：<?php the_date(); ?><br class="sp"><span class="pc">／</span>
+										最終更新日：<?php the_modified_date(); ?>
+									</p>
+									<h3 class="section_h3">
+											<?php the_title(); ?>
+									</h3>
+									<p class="read_time">
+										<?php echo sprintf('読了予測：約%s分', get_time_to_content_read(get_the_content())); ?>
+									</p>
+									<div class="single_box">
+										<?php if (has_post_thumbnail()) : ?>
+											<div class="post-thumbnail">
+												<?php the_post_thumbnail('full'); ?>
+											</div>
+										<?php endif; ?>
+										<p><?php the_content(); ?></p>
+										<div class="single_reserve">
+											<strong class="bold">「お問い合わせ」</strong><br>
+											&rArr;　<a href="/contact/"><strong class="blue">お問い合わせください。</strong></a>
 										</div>
-
-								<?php endwhile; ?>
+									</div>
+								</div>
+							<?php endwhile; ?>
 						<?php endif; ?>
 
 						<?php
