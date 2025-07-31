@@ -209,9 +209,9 @@ function campaign_end_date() {
   <p class="campaign">
       夏の特別キャンペーン <br class="campaign_pc">期間限定<span>
       <?php if ($current_time < $campaign_end_date) { ?>
-          6/30
-      <?php } else { ?>
           7/31
+      <?php } else { ?>
+          8/31
       <?php } ?>
       </span>まで
   </p>
