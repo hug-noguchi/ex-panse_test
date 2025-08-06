@@ -18,7 +18,7 @@
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <li>
                         <a href="<?php the_permalink(); ?>">
-                            <p class="date"><?php the_date(); ?></p>
+                            <p class="date"><?php the_time('Y年n月j日'); ?></p>
                             <p class="title">
                               <span class="category">
                                 <?php

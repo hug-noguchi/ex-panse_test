@@ -211,10 +211,9 @@
 						<div class="thum_box">
 							<div class="title_price">
 								<div class="title_box">
-									<p class="time"><picture><source type="image/webp" srcset="<?php bloginfo('url'); ?>/images/hour18.webp"><img src="<?php bloginfo('url'); ?>/images/hour18.png" alt="jmr"></picture></p>
 									<p class="title title_basic">
 										<span>アーユルヴェーダの基礎から学ぶ</span><br>
-										基本コース
+										基礎コース
 									</p>
 								</div>
 								<?php echo do_shortcode('[campaign_date]'); ?>
@@ -609,7 +608,7 @@
 
 							foreach ( $custom_posts as $post ): setup_postdata($post); ?>
 								<li><a href="<?php the_permalink(); ?>" class="btn_fade">
-									<p class="date"><?php the_date(); ?></p>
+									<p class="date"><?php the_time('Y年n月j日'); ?></p>
 									<p class="title">
 										<?php
 										$title = $post->post_title;
@@ -650,7 +649,7 @@
 								foreach ( $custom_posts as $post ): setup_postdata($post); ?>
 								<li>
 									<a href="<?php the_permalink(); ?>" class="btn_fade">
-										<p class="date"><?php the_date(); ?></p>
+										<p class="date"><?php the_time('Y年n月j日'); ?></p>
 										<p class="title">
 											<?php
 											$title = $post->post_title;

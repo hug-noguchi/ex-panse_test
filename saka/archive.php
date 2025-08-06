@@ -16,16 +16,17 @@
 
 					<ul class="info_list">
 							<?php
+							// カスタムクエリを使用して全ての投稿を取得
 							$args = array(
 									'post_type' => 'post',
-									'posts_per_page' => 6,
+									'posts_per_page' => 6, // 全ての投稿を取得
 							);
 							$all_posts = new WP_Query($args);
 							?>
 
 							<?php if ($all_posts->have_posts()) : while ($all_posts->have_posts()) : $all_posts->the_post(); ?>
 									<li>
-											<a href="<?php the_permalink(); ?>">
+											<a href="<?php the<?php the_time('Y年n月j日'); ?>
 													<p class="date"><?php the_date(); ?></p>
 													<p class="title">
 														<span class="category">
@@ -43,7 +44,7 @@
 							<?php endwhile; else : ?>
 									<p>記事がありません</p>
 							<?php endif; ?>
-							<?php wp_reset_postdata();?>
+							<?php wp_reset_postdata(); // カスタムクエリをリセット ?>
 					</ul>
 
 					<nav class="pagination_nav">
@@ -66,6 +67,7 @@
 						<li><a href="/category/ayurveda"><span>アーユルヴェーダ</span></a></li>
 						<li><a href="/category/business"><span>開業</span></a></li>
 						<li><a href="/category/blog"><span>その他</span></a></li>
+						<!-- <li><a href="/category/other"><span>その他</span></a></li> -->
 					</ul>
 				</div>
 			</div>

@@ -113,7 +113,7 @@
 							<?php while (have_posts()) : the_post(); ?>
 								<div>
 									<p class="date">
-										記事公開日：<?php the_date(); ?><br class="sp"><span class="pc">／</span>
+										記事公開日：<?php the_time('Y年n月j日'); ?><br class="sp"><span class="pc">／</span>
 										最終更新日：<?php the_modified_date(); ?>
 									</p>
 									<h3 class="section_h3">
