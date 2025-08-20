@@ -11,6 +11,7 @@ main {
 }
 
 .tab button {
+  font-size: 2rem;
   background-color: var(--main-bg2color);
   cursor: pointer;
   display: flex;
@@ -23,8 +24,15 @@ main {
   border: unset;
 }
 
+@media (max-width: 480px) {
+  .tab button {
+    font-size: 1.4rem;
+  }
+}
+
 .tab button:hover {
-  opacity: 0.7;
+  opacity: unset;
+  background: #f0e1d6;
 }
 
 .tab button.active {
@@ -182,13 +190,6 @@ main {
   }
 }
 
-/* @media only screen and (min-width: 641px) {
-  .one-on-one_txt p::before {
-    bottom: -18%;
-    left: -24%;
-  }
-} */
-
 @media (max-width: 640px) {
   .one-on-one_lead span::before,
   .one-on-one_lead span::after {
@@ -302,7 +303,8 @@ main {
   }
 }
 .tab button.active {
-  background: var(--main-bg2color);
+  /* background: var(--main-bg2color); */
+  background: #f0e1d6;
   border-top: 1px solid var(--main-color3);
 }
 .tabcontent .container {
