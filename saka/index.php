@@ -10,6 +10,172 @@
 				padding: 30px 0 40px;
 			}
 		}
+
+		.new_courses {
+  padding-top: 20px;
+}
+.new_courses a {
+  color: var(--main-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.new_courses a:active,
+.new_courses a:hover {
+  cursor: pointer;
+  outline: 0;
+}
+.new_courses .new_courses_list_sp {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 白いオーバーレイ（初期は透明） */
+.new_courses .new_courses_list_sp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0); /* 初期状態は透明 */
+  transition: background 0.3s ease;
+  z-index: 1;
+  pointer-events: none; /* オーバーレイがリンクの邪魔をしないように */
+}
+
+/* aタグにホバーしたときにオーバーレイ発動 */
+.new_courses a:hover .new_courses_list_sp::before {
+  background: rgba(255, 255, 255, 0.4); /* 明るく見せる */
+}
+
+/* 中身のテキストや画像は z-index を下げる */
+.new_courses .new_courses_list_sp > * {
+  position: relative;
+  z-index: 0;
+}
+
+.new_courses .thum_box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+.new_courses .new_courses_box ul.new_courses_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+.new_courses .new_courses_box ul.new_courses_list > li {
+  width: 248px;
+}
+.new_courses .new_courses_box ul.new_courses_list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.new_courses .new_courses_box ul.new_courses_list li .new_courses_title {
+  position: relative;
+  color: var(--main-color);
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1em;
+  padding: 10px 0;
+}
+.new_courses .new_courses_box ul.new_courses_list li .new_courses_title span {
+  color: var(--main-color3);
+  font-size: 1.4rem;
+  padding-right: 6px;
+}
+.new_courses .new_courses_box ul.new_courses_list li .course_kinds ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.new_courses .new_courses_box ul.new_courses_list li .course_kinds ul li {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 3px;
+  color: var(--main-color);
+  font-weight: 600;
+  background: var(--main-bgcolor);
+  border: 1px solid var(--main-color);
+}
+
+.stepup_title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--main-color3);
+}
+
+/* スマホ用レスポンシブ */
+@media (max-width: 480px) {
+  .new_courses .new_courses_box ul.new_courses_list {
+    gap: unset;
+  }
+  .new_courses .new_courses_box ul.new_courses_list > li {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    border-bottom: 1px dotted var(--main-color);
+  }
+  .new_courses .new_courses_box ul.new_courses_list li:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .new_courses .new_courses_box ul.new_courses_list > li .new_courses_list_sp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .new_courses .thum_box {
+    width: 33%;
+  }
+  .new_courses .new_courses_box ul.new_courses_list > li {
+    position: relative;
+  }
+  .new_courses .new_courses_box ul.new_courses_list li .new_courses_title {
+    font-size: 1.8rem;
+    padding: 0 0 10px;
+  }
+  .new_courses .new_courses_box ul.new_courses_list li .new_courses_title span {
+    font-size: 1.2rem;
+  }
+  .new_courses .new_courses_box ul.new_courses_list li .course_kinds ul li {
+    font-size: 9px;
+    line-height: 1.6;
+  }
+  .new_courses .new_courses_box ul.new_courses_list > li::after {
+    content: "\FF1E";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #380909;
+    font-size: 14px;
+    line-height: 1;
+    z-index: 2;
+    pointer-events: none;
+    transition: filter 0.3s ease;
+  }
+  .new_courses .new_courses_box ul.new_courses_list > li:hover::after {
+    filter: brightness(160%);
+  }
+  .new_courses .new_courses_list_sp {
+    position: relative;
+    z-index: 0;
+  }
+  .new_courses .new_courses_list_sp::before {
+    z-index: 1;
+  }
+  .stepup_title {
+    font-size: 2.4rem;
+    letter-spacing: -0.4px;
+    line-height: 1.4;
+  }
+}
+
 	</style>
 
 	<div id="main_img">
@@ -379,103 +545,189 @@
 					</article>
 				</div>
 
-				<article class="main_content top_stepup">
-					<div class="element js-animation">
-						<h3 class="section_h3">アーユルヴェーダ <br class="sp">ステップアップコース</h3>
-						<div class="sub_text_box">
-						<!-- <div class="sub_text_box font_white"> -->
-							<p>セラピストとしてさらなる高みを目指したい方にオススメの、3つの短時間コースです。<br>
-							セラピスト養成講座コースとステップアップコースを同時に受講すると、より施術の幅を拡げることができます。</p>
-						</div>
-
-						<div class="stepupmenu_box element js-animation">
-							<article class="content stepup1">
-								<a href="<?php bloginfo('url'); ?>/menu_stepup#step1_link">
-									<div class="thum_box">
-										<div class="title_price">
-											<div class="title_box">
-												<p class="title">
-													<span>究極の癒し・脳のトリートメントを学ぶ</span><br>
-													シローダーラーコース
-												</p>
-											</div>
-											<p class="price">
-												<span class="price_label">受講料</span><span class="price_text">&yen;85,800</span>
-											</p>
-											<p class="kyozai">
-												<span class="notes">（ダーラポット+オイル代込）</span>
-											</p>
-										</div>
-									</div>
-								</a>
-								<p class="courese_detail">アーユルヴェーダ・トリートメントの基本的なテクニックと身体を理解した上で学べる実技内容、また、本場インドのカリキュラムをもとに専門知識を習得できるコースです。</p>
-								<div class="btn_details">
-									<a href="/menu_stepup/" class="btn_ao_b">
-										<span class="b__text">詳しく見る</span>
-									</a>
+<article class="main_content">
+	<div class="element js-animation">
+		<h3 class="section_h3 stepup_title">アーユルヴェーダ<br class="sp"><span class="left_sp">ステップアップコース</span></h3>
+		<div class="sub_text_box">
+			<p>セラピストとしてさらなる高みを目指したい方にオススメの、3つの短時間コースです。<br>
+			セラピスト養成講座コースとステップアップコースを同時に受講すると、より施術の幅を拡げることができます。</p>
+		</div>
+		<div class="new_courses">
+			<div class="new_courses_box element js-animation">
+				<ul class="new_courses_list">
+					<li>
+						<a href="/course/shirodhara">
+							<div class="new_courses_list_sp">
+								<div class="thum_box">
+									<img src="<?php bloginfo('url'); ?>/images/course/new_courses_01.jpg" alt="シローダーラー">
 								</div>
-							</article>
-
-							<article class="content stepup2">
-								<a href="<?php bloginfo('url'); ?>/menu_stepup#step2_link">
-									<div class="thum_box">
-										<div class="title_price">
-											<div class="title_box">
-												<p class="title">
-													<span>しわ・むくみなどの解消法を学ぶ</span><br>
-													フェイシャルコース
-												</p>
-											</div>
-											<p class="price">
-												<span class="price_label">受講料</span><span class="price_text">&yen;96,800</span><span class="notes"></span>
-											</p>
-										</div>
+								<div class="new_courses_list_text">
+									<p class="new_courses_title">シローダーラー</p>
+									<div class="course_kinds">
+										<ul>
+											<li>体験1回</li>
+											<li>入門コース</li>
+											<li>上級コース</li>
+										</ul>
 									</div>
-								</a>
-								<p class="courese_detail">
-									スチーマーや機械を一切使わず、アーユルヴェーダだからこそすべてオールハンドです！<br>
-									お客様が喜んでリピートして頂けるテクニックを学べます。
-								</p>
-								<div class="btn_details">
-									<a href="/menu_stepup/" class="btn_ao_b">
-										<span class="b__text">詳しく見る</span>
-									</a>
 								</div>
-							</article>
-
-							<article class="content stepup3">
-								<a href="<?php bloginfo('url'); ?>/menu_stepup#step3_link">
-									<div class="thum_box">
-										<div class="title_price">
-											<div class="title_box">
-												<p class="title">
-													<span>さらに専門的にじっくり学ぶ</span><br>
-													セラピストとして<br>大切なこと
-												</p>
-											</div>
-											<p class="price">
-												<span class="price_label">受講料</span><span class="price_text">&yen;85,800</span><span class="notes"></span>
-											</p>
-										</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/course/facial/">
+							<div class="new_courses_list_sp">
+								<div class="thum_box">
+									<img src="<?php bloginfo('url'); ?>/images/course/new_courses_02.jpg" alt="フェイシャル">
+								</div>
+								<div class="new_courses_list_text">
+									<p class="new_courses_title">フェイシャル</p>
+									<div class="course_kinds">
+										<ul>
+											<li>体験1回</li>
+											<li>入門コース</li>
+											<li>上級コース</li>
+										</ul>
 									</div>
-								</a>
-								<p class="courese_detail">
-									本格的なトリートメント実技をもっと学びたい方に、セラピストを続けるためにも必要な事を伝えます。
-								</p>
-								<div class="btn_details">
-									<a href="/menu_stepup/" class="btn_ao_b">
-										<span class="b__text">詳しく見る</span>
-									</a>
 								</div>
-							</article>
-						</div>
-						<div class="btn_details btn_course_list">
-							<a href="/course/" class="btn_ao_b">
-								<span class="b__text">コース⼀覧を見る</span>
-							</a>
-						</div>
-					</div>
-				</article>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/course/creambath/">
+							<div class="new_courses_list_sp">
+								<div class="thum_box">
+									<img src="<?php bloginfo('url'); ?>/images/course/new_courses_03.jpg" alt="クリームバス">
+								</div>
+								<div class="new_courses_list_text">
+									<p class="new_courses_title">クリームバス</p>
+									<div class="course_kinds">
+										<ul>
+											<li>体験1回</li>
+											<li>入門コース</li>
+											<li>上級コース</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/course/hotstone/">
+							<div class="new_courses_list_sp">
+								<div class="thum_box">
+									<img src="<?php bloginfo('url'); ?>/images/course/new_courses_04.jpg" alt="ホットストーン">
+								</div>
+								<div class="new_courses_list_text">
+									<p class="new_courses_title">ホットストーン</p>
+									<div class="course_kinds">
+										<ul>
+											<li>体験1回</li>
+											<li>入門コース</li>
+											<li>上級コース</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/course/ayurhand/">
+							<div class="new_courses_list_sp">
+								<div class="thum_box">
+									<img src="<?php bloginfo('url'); ?>/images/course/new_courses_05.jpg" alt="アユルハンド">
+								</div>
+								<div class="new_courses_list_text">
+									<p class="new_courses_title">
+										<span>特別講座</span>アユルハンド
+									</p>
+									<div class="course_kinds">
+										<ul>
+											<li>体験1回</li>
+											<li>上級コース</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/course/jamubalinese/">
+							<div class="new_courses_list_sp">
+								<div class="thum_box">
+									<img src="<?php bloginfo('url'); ?>/images/course/new_courses_06.jpg" alt="ジャムゥバリニーズ">
+								</div>
+								<div class="new_courses_list_text">
+									<p class="new_courses_title">ジャムゥバリニーズ</p>
+									<div class="course_kinds">
+										<ul>
+											<li>体験1回</li>
+											<li>上級コース</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/course/herbball/">
+							<div class="new_courses_list_sp">
+								<div class="thum_box">
+									<img src="<?php bloginfo('url'); ?>/images/course/new_courses_07.jpg" alt="ハーブボール">
+								</div>
+								<div class="new_courses_list_text">
+									<p class="new_courses_title">ハーブボール</p>
+									<div class="course_kinds">
+										<ul>
+											<li>体験1回</li>
+											<li>入門コース</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="/course/headmaster/">
+							<div class="new_courses_list_sp">
+								<div class="thum_box">
+									<img src="<?php bloginfo('url'); ?>/images/course/new_courses_08.jpg" alt="ヘッドマスター">
+								</div>
+								<div class="new_courses_list_text">
+									<p class="new_courses_title">ヘッドマスター</p>
+									<div class="course_kinds">
+										<ul>
+											<li>体験1回</li>
+											<li>入門コース</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="new_courses_list_sp">
+								<div class="thum_box">
+									<img src="<?php bloginfo('url'); ?>/images/course/new_courses_09.jpg" alt="カウンセリング">
+								</div>
+								<div class="new_courses_list_text">
+									<p class="new_courses_title">カウンセリング</p>
+									<div class="course_kinds">
+										<ul>
+											<li>体験1回</li>
+											<li>入門コース</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</article>
 			</div>
 		</section>
 
