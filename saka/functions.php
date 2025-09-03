@@ -221,16 +221,28 @@ function campaign_end_date() {
 }
 add_shortcode('campaign_date', 'campaign_end_date');
 
-//本文を読むのにかかる時間
+//読了予測
 function get_time_to_content_read($content){
-  $count = mb_strlen(strip_tags($content));
-  if ($count == 0) {
-    return 0;
+  // タグ＆ショートコードを除去
+  $text  = wp_strip_all_tags( strip_shortcodes( $content ) );
+  // 空白を除去
+  $text  = preg_replace('/\s+/u', '', $text);
+  // 全角も考慮して文字数を取得
+  $count = mb_strlen($text, 'UTF-8');
+
+  if ($count === 0) {
+    return 0; // 本文が空なら 0分（常に1分表示したい場合は return 1; に変更）
   }
-  $minutes = floor($count / 600) + 1;
-  return $minutes;
+
+  // 1分あたりの文字数（大きくすると短めに出る）
+  $cpm = 2000;
+
+  // 切り上げで分数を計算、最低1分は表示
+  $minutes = (int) ceil($count / max(1, (int)$cpm));
+  return max(1, $minutes);
 }
 
+// ブログカテゴリーの投稿表示数
 function custom_posts_per_page_for_all_templates_and_categories($query) {
   if (!is_admin() && $query->is_main_query() && (is_category() || is_page_template())) {
       $query->set('posts_per_page', 10);
