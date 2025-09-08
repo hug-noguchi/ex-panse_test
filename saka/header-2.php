@@ -18,10 +18,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php echo get_bloginfo('name'); ?>></title>
+	<title>アーユルヴェーダスクール｜Expanse..School　東京都中央区銀座</title>
 <?php wp_head(); ?>
 	<meta name="keywords" content="アーユルヴェーダ,養成講座,セラピスト,スクール,インストラクター,マッサージ">
-	<meta name="description" content="<?php echo get_bloginfo('name'); ?>アーユルヴェーダスクールです。東京・恵比寿駅徒歩１分。セラピストとして新たな技術や、これから独立をお考えの方への本場ケララのアーユルヴェーダスクール。実技・座学等、色々な養成講座コースがあります。独立支援コースやサロンの開業等サポートしております。東京・神奈川・千葉・茨城">
+	<meta name="description" content="アーユルヴェーダスクール｜Expanse..School　東京都中央区銀座 アーユルヴェーダスクールです。東京・恵比寿駅徒歩１分。セラピストとして新たな技術や、これから独立をお考えの方への本場ケララのアーユルヴェーダスクール。実技・座学等、色々な養成講座コースがあります。独立支援コースやサロンの開業等サポートしております。東京・神奈川・千葉・茨城">
 	<link rel="icon" href="images/icon.gif" type="image/jpeg" sizes="16x16">
 	<link rel="apple-touch-icon-precomposed" href="<?php bloginfo('url'); ?>/images/webclip.png" />
 	<link href="<?php bloginfo('url'); ?>/include/css/bootstrap.min.css" rel="stylesheet">
@@ -29,6 +29,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<?php
 	if ( is_page('course') ) : ?>
 			<link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/include/css/course.css?<?php echo date('YmdHis'); ?>">
+	<?php
+	endif;
+	// course の下層ページ（子ページ・孫ページ）
+	$course_page = get_page_by_path('course');
+	if ( $course_page && in_array($course_page->ID, get_post_ancestors(get_queried_object_id())) ) : ?>
+			<link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/include/css/course_lower.css?<?php echo date('YmdHis'); ?>">
 	<?php
 	endif;
 	if ( is_page('access') ) : ?>
