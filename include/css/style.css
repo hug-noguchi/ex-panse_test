@@ -6933,3 +6933,302 @@ ul {
     padding: 0 !important;
   }
 }
+
+/* TOP ステップアップコース */
+.stepup_top .new_courses {
+  padding-top: 20px;
+}
+.stepup_top .new_courses a {
+  color: var(--main-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.stepup_top .new_courses a:active,
+.stepup_top .new_courses a:hover {
+  cursor: pointer;
+  outline: 0;
+}
+.stepup_top .new_courses .new_courses_list_sp {
+  position: relative;
+  overflow: hidden;
+}
+.stepup_top .new_courses .new_courses_list_sp::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  transition: background 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+.stepup_top .new_courses a:hover .new_courses_list_sp::before {
+  background: rgba(255, 255, 255, 0.4);
+}
+.stepup_top .new_courses .new_courses_list_sp > * {
+  position: relative;
+  z-index: 0;
+}
+.stepup_top .new_courses .thum_box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 0;
+}
+.stepup_top .new_courses .new_courses_box ul.new_courses_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+.stepup_top .new_courses .new_courses_box ul.new_courses_list > li {
+  width: 248px;
+}
+.stepup_top .new_courses .new_courses_box ul.new_courses_list li:not(:last-child) {
+  margin-bottom: 20px;
+}
+.stepup_top .new_courses .new_courses_box ul.new_courses_list li .new_courses_title {
+  position: relative;
+  color: var(--main-color);
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1em;
+  padding: 10px 0;
+}
+.stepup_top .new_courses .new_courses_box ul.new_courses_list li .new_courses_title span {
+  color: var(--main-color3);
+  font-size: 1.4rem;
+  padding-right: 6px;
+}
+.stepup_top .new_courses .new_courses_box ul.new_courses_list li .course_kinds ul {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.stepup_top .new_courses .new_courses_box ul.new_courses_list li .course_kinds ul li {
+  font-size: 10px;
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 3px;
+  color: var(--main-color);
+  font-weight: 600;
+  background: var(--main-bgcolor);
+  border: 1px solid var(--main-color);
+}
+
+.stepup_top .stepup_title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--main-color3);
+}
+
+@media (max-width: 480px) {
+  .stepup_top .new_courses .new_courses_box ul.new_courses_list {
+    gap: unset;
+  }
+  .stepup_top .new_courses .new_courses_box ul.new_courses_list > li {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0px;
+    border-bottom: 1px dotted var(--main-color);
+  }
+  .stepup_top .new_courses .new_courses_box ul.new_courses_list li:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .stepup_top .new_courses .new_courses_box ul.new_courses_list > li .new_courses_list_sp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .stepup_top .new_courses .thum_box {
+    width: 33%;
+  }
+  .stepup_top .new_courses .new_courses_box ul.new_courses_list > li {
+    position: relative;
+  }
+  .stepup_top .new_courses .new_courses_box ul.new_courses_list li .new_courses_title {
+    font-size: 1.8rem;
+    padding: 0 0 10px;
+  }
+  .stepup_top .new_courses .new_courses_box ul.new_courses_list li .new_courses_title span {
+    font-size: 1.2rem;
+  }
+  .stepup_top .new_courses .new_courses_box ul.new_courses_list li .course_kinds ul li {
+    font-size: 9px;
+    line-height: 1.6;
+  }
+  .stepup_top .new_courses .new_courses_box ul.new_courses_list > li::after {
+    content: "\FF1E";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #380909;
+    font-size: 14px;
+    line-height: 1;
+    z-index: 2;
+    pointer-events: none;
+    transition: filter 0.3s ease;
+  }
+  .stepup_top .new_courses .new_courses_box ul.new_courses_list > li:hover::after {
+    filter: brightness(160%);
+  }
+  .stepup_top .new_courses .new_courses_list_sp {
+    position: relative;
+    z-index: 0;
+  }
+  .stepup_top .new_courses .new_courses_list_sp::before {
+    z-index: 1;
+  }
+  .stepup_top .stepup_title {
+    font-size: 2.4rem;
+    letter-spacing: -0.4px;
+    line-height: 1.4;
+  }
+}
+
+/* TOP 早割りキャンペーン実施中！ */
+.overview_campaign_top a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+.overview_campaign_top a.overview_campaign_top_box {
+  padding-bottom: 2% !important;
+}
+.overview_campaign_top .thum_box {
+  background: url(../../images/fv_taiken_pc.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+.overview_campaign_top .title_price {
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+  left: 5%;
+  width: 90%;
+  margin: 0 auto;
+}
+.overview_campaign_top .campaign {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  line-height: 1.4em;
+}
+.overview_campaign_top .present span {
+  font-weight: bold;
+}
+.overview_campaign_top .overview_campaign_top_yajirushi {
+  padding: 0 10px;
+}
+.overview_campaign_top .doubleline {
+  position: relative;
+  display: inline-block;
+}
+.overview_campaign_top .doubleline::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-top: solid 1px #fff;
+  position: absolute;
+  left: 0;
+  top: calc(50% - -1px);
+}
+.overview_campaign_top .doubleline::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: solid 1px #fff;
+  position: absolute;
+  left: 0;
+  bottom: calc(50% - 7px);
+}
+@media (min-width: 481px) {
+  .overview_campaign_top {
+    padding-top: 4%;
+  }
+}
+@media (max-width: 480px) {
+  .overview_campaign_top a.overview_campaign_top_box {
+    padding-bottom: 5% !important;
+  }
+  .overview_campaign_top #price_school-remarks {
+    margin-bottom: 10px;
+  }
+  .overview_campaign_top .title_price .price span:nth-of-type(2).price_text {
+    padding-bottom: 20px;
+  }
+  .overview_campaign_top .doubleline::before {
+    top: calc(50% - 12px);
+  }
+  .overview_campaign_top .doubleline::after {
+    bottom: calc(50% - -6px);
+  }
+}
+/* コースのご案内 至極のアーユルヴェーダ体験インド・ケララ6泊8日コース */
+.menu_list .menu_box .content.taiken .thum_box {
+  background: url(../../images/taiken_img.webp) center no-repeat;
+  background-size: cover;
+}
+.menu_list .menu_box .content.taiken #price_school-remarks {
+  margin-bottom: 10px;
+}
+.menu_list .menu_box .content.taiken .title_price .price {
+  gap: 0.2em;
+}
+.menu_list .menu_box .content.taiken .title_price .price .old_price,
+.menu_list .menu_box .content.taiken .title_price .new_price {
+  flex: 0 0 100%;
+  display: flex;
+  gap: 0.2em;
+  margin-top: 0.3em;
+}
+.menu_list .menu_box .content.taiken .doubleline {
+  position: relative;
+  display: inline-block;
+}
+.menu_list .menu_box .content.taiken .doubleline::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-top: solid 1px #fff;
+  position: absolute;
+  left: 0;
+  top: calc(50% - -1px);
+}
+.menu_list .menu_box .content.taiken .doubleline::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: solid 1px #fff;
+  position: absolute;
+  left: 0;
+  bottom: calc(50% - 7px);
+}
+@media (max-width: 480px) {
+  .menu_list .menu_box .content.taiken .title_price .price .old_price {
+    display: flex;
+    align-items: baseline;
+    gap: 0.2em;
+  }
+  .menu_list .menu_box .content.taiken .title_price .price .overview_campaign_top_yajirushi {
+    font-size: 4rem;
+    flex: 0 0 auto;
+    align-self: center;
+    margin-left: 4px;
+  }
+  .menu_list .menu_box .content.taiken .title_price .price .old_price {
+    display: block;
+    white-space: nowrap;
+  }
+  .menu_list .menu_box .content.taiken .title_price .new_price {
+    display: block;
+  }
+}
