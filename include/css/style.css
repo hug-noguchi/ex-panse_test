@@ -7177,6 +7177,11 @@ ul {
   background: url(../../images/taiken_img.webp) center no-repeat;
   background-size: cover;
 }
+.menu_list .menu_box .content.taiken .taiken_notes {
+  font-size: 1.4rem;
+  line-height: 1em;
+  margin-bottom: 2rem;
+}
 .menu_list .menu_box .content.taiken #price_school-remarks {
   margin-bottom: 10px;
 }
@@ -7213,6 +7218,10 @@ ul {
   bottom: calc(50% - 7px);
 }
 @media (max-width: 480px) {
+  .menu_list .menu_box .content.taiken .taiken_notes {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
   .menu_list .menu_box .content.taiken .title_price .price .old_price {
     display: flex;
     align-items: baseline;
