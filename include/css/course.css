@@ -24,7 +24,7 @@ main {
   /* border: unset; */
   color: #60676f;
   background-color: #fff;
-  border-bottom: 3px solid #60676f;
+  border-bottom: 2px solid #60676f;
 }
 
 @media (max-width: 480px) {
@@ -37,7 +37,7 @@ main {
   opacity: unset;
   background: #f0e1d6;
   color: var(--main-color);
-  border-bottom: 3px solid var(--main-color3);
+  border-bottom: 2px solid var(--main-color3);
 }
 
 .tab button.active {
@@ -48,7 +48,7 @@ main {
   border-top: unset;
   background: #f0e1d6;
   cursor: unset;
-  border-bottom: 3px solid var(--main-color3);
+  border-bottom: 2px solid var(--main-color3);
 }
 
 .tabcontent {
