@@ -12,7 +12,6 @@ main {
 
 .tab button {
   font-size: 2rem;
-  /* background-color: var(--main-bg2color); */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -21,7 +20,6 @@ main {
   padding: 25px 0;
   text-align: center;
   width: calc(100% / 2);
-  /* border: unset; */
   color: #60676f;
   background-color: #fff;
   border-bottom: 2px solid #60676f;
@@ -43,8 +41,6 @@ main {
 .tab button.active {
   color: var(--main-color3);
   font-weight: bold;
-  /* background-color: #2c0707;
-  border-top: 1px solid var(--main-buttoncolor); */
   border-top: unset;
   background: #f0e1d6;
   cursor: unset;
@@ -311,11 +307,6 @@ main {
     left: -24%;
   }
 }
-/* .tab button.active {
-  background: var(--main-bg2color);
-  background: #f0e1d6;
-  border-top: 1px solid var(--main-color3);
-} */
 .tabcontent .container {
   background: var(--main-bg2color);
 }
