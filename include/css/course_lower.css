@@ -823,6 +823,48 @@ h4.skill {
 .taiken .btn_ao_b {
   max-width: 400px;
 }
+.taiken .pd_16 {
+  padding-bottom: 16px;
+}
+.taiken .option_detail {
+  margin-top: 16px;
+}
+.taiken .option_detail table {
+  width: 100%;
+}
+.taiken .option_detail table tr th {
+  color: var(--main-color3);
+  font-weight: 500;
+  text-align: center;
+  width: 80px;
+  background-color: #eee8e4;
+  padding: 14px 20px;
+  border-right: 1px solid var(--main-bg2color);
+}
+.taiken .option_detail table tr td {
+  padding: 10px 20px;
+  background: #fff;
+  border-bottom: 1px solid var(--main-bg2color);
+}
+.taiken .option_detail table tr:not(:last-child) th,
+.taiken .option_detail table tr:not(:last-child) td {
+  border-bottom: 1px solid var(--main-bg2color);
+}
+.taiken .option_detail table tr td:nth-of-type(1) {
+  border-right: 1px solid var(--main-bg2color);
+}
+.taiken .option_detail .option_detail_notes {
+  font-size: 14px;
+  padding-top: 6px;
+}
+.taiken .option_list li {
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+.taiken .schedule_notes p {
+  padding-left: 1em;
+  text-indent: -1em;
+}
 @media (min-width: 1024px) {
   #main_img.taiken_img {
     background-image: url(../../images/fv_taiken_pc.jpg);
@@ -928,5 +970,17 @@ h4.skill {
   }
   .taiken .schedule_detail .time_zone {
     margin-bottom: 8px;
+  }
+  .taiken .option_detail table,
+  .taiken .option_detail table tbody,
+  .taiken .option_detail table tr,
+  .taiken .option_detail table tr th,
+  .taiken .option_detail table tr td {
+    display: block;
+    width: 100%;
+  }
+  .taiken .option_detail th,
+  .taiken .option_detail td {
+    padding: 14px 10px;
   }
 }
