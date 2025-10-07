@@ -6890,14 +6890,25 @@ ul {
   padding: 40px;
   margin-bottom: 0;
 }
+.teacher_container .sunil_text > p:not(:last-child) {
+  margin-bottom: 20px;
+}
 .teacher_container .sunil_name {
   font-size: 2rem;
   font-weight: 700;
 }
 .teacher_container .sunil_text span {
-  font-size: 1.7rem;
   font-weight: 700;
-  color: var(--main-color3);
+  color: var(--main-color);
+}
+.teacher_container .sunil_name span:nth-of-type(1) {
+  font-size: 1.2rem;
+}
+.teacher_container .sunil_name span:nth-of-type(2) {
+  font-size: 2rem;
+}
+.teacher_container .sunil_name span:nth-of-type(3) {
+  font-size: 1.4rem;
 }
 .teacher_container .sunil01 {
   padding-bottom: 20px;
@@ -6919,8 +6930,12 @@ ul {
   }
 }
 @media (max-width: 640px) {
+  .teacher_container .sunil_name {
+    margin-bottom: 20px;
+  }
   .teacher_container .sunil_image {
-    padding-bottom: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
   .teacher_container .sunil_text {
     padding-bottom: 10px;
