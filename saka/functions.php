@@ -199,27 +199,25 @@ add_action( 'pre_get_posts', 'change_posts_per_page' );
 
 // キャンペーン日時自動変更
 function campaign_end_date() {
-  date_default_timezone_set('Asia/Tokyo'); // タイムゾーンを設定
-  $current_time = strtotime(date('Y-m-d H:i'));
-  $campaign_end_date = strtotime('2025-6-30 23:59');
+  $now = current_time('timestamp');
+  $deadline = strtotime('2025-10-31 23:59');
 
-  ob_start(); // 出力バッファリングを開始
+  $is_before_deadline = ($now <= $deadline);
 
+  $title   = $is_before_deadline ? '秋の特別キャンペーン' : '冬の特別キャンペーン';
+  $until   = $is_before_deadline ? '10/31' : '11/30';
+
+  ob_start();
   ?>
   <p class="campaign">
-      秋の特別キャンペーン <br class="campaign_pc">期間限定<span>
-      <?php if ($current_time < $campaign_end_date) { ?>
-          9/30
-      <?php } else { ?>
-          10/31
-      <?php } ?>
-      </span>まで
+    <?php echo esc_html($title); ?> <br class="campaign_pc">期間限定
+    <span><?php echo esc_html($until); ?></span>まで
   </p>
   <?php
-
-  return ob_get_clean(); // バッファの内容を返す
+  return ob_get_clean();
 }
 add_shortcode('campaign_date', 'campaign_end_date');
+
 
 //読了予測
 function get_time_to_content_read($content){
