@@ -247,3 +247,36 @@ function custom_posts_per_page_for_all_templates_and_categories($query) {
   }
 }
 add_action('pre_get_posts', 'custom_posts_per_page_for_all_templates_and_categories');
+
+// ▼ 固定ページ「teacher」専用の動画ボタン制御JSを head に出力
+function add_teacher_video_script() {
+    if ( is_page('teacher') ) :
+?>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const youtubeBoxes = document.querySelectorAll(".campaign_detail_box .youtube");
+
+  youtubeBoxes.forEach(function(box) {
+    const playButton = box.querySelector("img");
+    const video = box.querySelector("video");
+
+    if (!playButton || !video) return;
+
+    video.addEventListener("play", function() {
+      playButton.style.display = "none";
+    });
+
+    video.addEventListener("pause", function() {
+      playButton.style.display = "block";
+    });
+
+    video.addEventListener("ended", function() {
+      playButton.style.display = "block";
+    });
+  });
+});
+</script>
+<?php
+    endif;
+}
+add_action('wp_head', 'add_teacher_video_script');
