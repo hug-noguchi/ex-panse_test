@@ -6917,7 +6917,6 @@ ul {
   padding-bottom: 0;
 }
 .teacher_container .youtube {
-  max-width: 480px;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -6943,6 +6942,7 @@ ul {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 3 / 2;
 }
 @media (max-width: 1023px) {
   .teacher_container .sunil article {
@@ -6977,6 +6977,9 @@ ul {
   }
   .teacher_container .youtube {
     margin-bottom: 20px;
+  }
+  .teacher_container .youtube video {
+    aspect-ratio: unset;
   }
 }
 
