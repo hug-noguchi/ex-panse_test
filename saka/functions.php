@@ -200,12 +200,12 @@ add_action( 'pre_get_posts', 'change_posts_per_page' );
 // キャンペーン日時自動変更
 function campaign_end_date() {
   $now = current_time('timestamp');
-  $deadline = strtotime('2025-10-31 23:59');
+  $deadline = strtotime('2025-12-31 23:59');
 
   $is_before_deadline = ($now <= $deadline);
 
-  $title   = $is_before_deadline ? '秋の特別キャンペーン' : '冬の特別キャンペーン';
-  $until   = $is_before_deadline ? '10/31' : '11/30';
+  $title   = $is_before_deadline ? '冬の特別キャンペーン' : '新春キャンペーン';
+  $until   = $is_before_deadline ? '12/31' : '1/31';
 
   ob_start();
   ?>
