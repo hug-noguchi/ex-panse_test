@@ -10,6 +10,68 @@
 				padding: 30px 0 40px;
 			}
 		}
+		.independence_cource_main .thum_box {
+			background: url(../../images/menu2_img_v2.jpg) center no-repeat;
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			min-height: 400px;
+		}
+		.independence_cource_main .thum_box {
+			min-height: 540px;
+		}
+		.title_independence {
+			position: relative;
+		}
+		.title_independence::after {
+			background: url(../../images/keyword_independence.png) no-repeat;
+			background-size: contain;
+			content: "";
+			display: inline-block;
+			width: 430px;
+			height: 315px;
+			position: absolute;
+			top: -20%;
+			left: 136%;
+		}
+		.menu_list .top_menu .content {
+			width: 50%;
+		}
+		@media screen and (max-width: 1023px) {
+			.independence_cource_main .thum_box {
+				min-height: 660px;
+			}
+			.title_independence::after {
+				width: 360px;
+        top: -50%;
+        left: 40%;
+			}
+			.menu_list .top_menu .content {
+				width: 100%;
+			}
+		}
+		@media (max-width: 780px) {
+			.title_independence::after {
+				width: 282px;
+				height: 112px;
+				top: -310%;
+				left: 19%;
+			}
+			.independence_cource_main .present {
+				padding-top: 8px;
+			}
+		}
+		@media (max-width: 480px) {
+			.menu_list .independence_cource_main .title_price .kyozai {
+				margin-top: 24px;
+			}
+			.independence_cource .campaign_code {
+				margin-top: 26px;
+			}
+			.independence_cource_main .campaign_code {
+				margin-top: 14px;
+			}
+		}
 	</style>
 
 	<div id="main_img">
@@ -205,6 +267,54 @@
 					セラピスト養成講座<br class="sp">コース<em>（国内校）</em></h2>
 				</article>
 
+				<article class="content menu3 independence_cource independence_cource_main">
+
+					<a href="<?php bloginfo('url'); ?>/menu_menu3/">
+						<div class="thum_box">
+							<div class="title_price">
+								<div class="title_box">
+									<p class="time"><picture><source type="image/webp" srcset="<?php bloginfo('url'); ?>/images/hour35.webp"><img src="<?php bloginfo('url'); ?>/images/hour35.png" alt="jmr"></picture></p>
+									<p class="title title_independence">
+										<span>すぐにスタートできる開業商材セット付き</span><br>
+											独立・開業コース
+									</p>
+								</div>
+								<?php echo do_shortcode('[campaign_date]'); ?>
+								<p class="price">
+									<span class="price_label">受講料</span>
+									<span class="price_text">&yen;<span class="price_line">780,000</span></span>
+								</p>
+								<p class="kyozai">
+									<span class="notes">（教材+ドーシャ別オイル代+開業セット商材込）/<br class="sp">協会会員費（初年度無料）</span>
+								</p>
+								<div class="campaign_code">
+									<p>
+										10%割引　『キャンペーンコード:expa2025』<br>
+										<span>※お申し込みの際にこちらのキャンペーンコードをご入力ください。</span>
+									</p>
+								</div>
+								<p class="present">
+									当日お申込み2大特典(50,000円相当)<br>
+									①全身+シローダーラー120分体験トリートメントをプレゼントします！<br>
+									②オリジナル化粧品エクスパール4本セットをプレゼントします！
+								</p>
+							</div>
+						</div>
+					</a>
+
+					<div class="text_box domestic_box">
+						<p><strong>「開業まで学びたい！」</strong></p>
+						<p>自分だけのセラピストとして開業できる実践力と資格を身につけることができます。<br>
+						総合プロコースです！</p>
+					</div>
+
+					<div class="btn_details">
+						<a href="/menu_menu3/" class="btn_ao_b">
+							<span class="b__text">詳しく見る</span>
+						</a>
+					</div>
+				</article>
+
 				<article class="content menu3 independence_cource">
 
 					<a href="<?php bloginfo('url'); ?>/menu_menu1/">
@@ -329,7 +439,7 @@
 						</div>
 					</article>
 
-					<article class="content menu2 domestic">
+					<!-- <article class="content menu2 domestic">
 						<a href="<?php bloginfo('url'); ?>/menu_menu3/">
 							<div class="thum_box">
 								<p class="ribbon"><picture><source type="image/webp" srcset="<?php bloginfo('url'); ?>/images/menu_no1.webp"><img src="<?php bloginfo('url'); ?>/images/menu_no1.png" alt="人気No.1"></picture></p>
@@ -376,7 +486,7 @@
 								<span class="b__text">詳しく見る</span>
 							</a>
 						</div>
-					</article>
+					</article> -->
 				</div>
 
 				<article class="content overview_campaign_top">
