@@ -1077,6 +1077,7 @@ menu_list
 .menu_list .menu_box .content .text_box {
   padding: 5%;
   color: var(--main-color);
+  flex: 1;
 }
 
 @media all and (min-width: 481) {
@@ -1151,15 +1152,11 @@ menu_list
   }
 }
 
-.menu1_text_box,
 .menu2_text_box {
   height: 240px;
 }
 
 @media all and (max-width: 480px) {
-  .menu1_text_box {
-    height: 183px;
-  }
   .menu2_text_box {
     height: 156px;
   }
@@ -3579,11 +3576,17 @@ following
   line-height: 200%;
 }
 .menu_list .top_menu .content {
-  width: 33.33%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 .independence_cource .title_price .price span.notes {
   flex: unset;
   padding-top: 20px;
+}
+.menu_list .top_menu .content .btn_details {
+  margin-top: auto;
 }
 @media (min-width: 1024px) {
   .menu_list .top_menu {

@@ -28,14 +28,11 @@
 			background-size: contain;
 			content: "";
 			display: inline-block;
-			width: 430px;
+			width: 360px;
 			height: 315px;
 			position: absolute;
 			top: -20%;
 			left: 136%;
-		}
-		.menu_list .top_menu .content {
-			width: 50%;
 		}
 		@media screen and (max-width: 1023px) {
 			.independence_cource_main .thum_box {
@@ -43,19 +40,22 @@
 			}
 			.title_independence::after {
 				width: 360px;
-        top: -50%;
+        top: -250%;
         left: 40%;
 			}
 			.menu_list .top_menu .content {
 				width: 100%;
+			}
+			.menu_list .independence_cource_main .title_price .kyozai {
+				margin-top: 30px;
 			}
 		}
 		@media (max-width: 780px) {
 			.title_independence::after {
 				width: 282px;
 				height: 112px;
-				top: -310%;
-				left: 19%;
+				top: -230%;
+				left: 31%;
 			}
 			.independence_cource_main .present {
 				padding-top: 8px;
