@@ -3603,7 +3603,6 @@ following
 }
 @media (max-width: 1023px) {
   .menu_list .top_menu .content {
-    width: 33.33%;
     width: 100%;
   }
   .independence_cource .thum_box {
@@ -4153,6 +4152,8 @@ picture {
 .sns_item {
   max-width: var(--main-width);
   margin: 0 auto;
+  padding: 60px 0;
+  background: var(--main-bg2color);
 }
 .sns h2 {
   color: var(--main-color3);
@@ -4174,6 +4175,9 @@ picture {
 }
 
 @media (max-width: 800px) {
+  .sns_item {
+    padding: 30px 0 40px;
+  }
   .sns {
     padding: 30px 0 40px;
   }
@@ -7291,5 +7295,66 @@ ul {
   }
   .menu_list .menu_box .content.taiken .title_price .new_price {
     display: block;
+  }
+}
+
+/* TOP 独立・開業コース */
+.independence_cource_main .thum_box {
+  background: url(../../images/menu2_img_v2.jpg) center no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+}
+.independence_cource_main .thum_box {
+  min-height: 540px;
+}
+.title_independence {
+  position: relative;
+}
+.title_independence::after {
+  background: url(../../images/keyword_independence.png) no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  width: 360px;
+  height: 315px;
+  position: absolute;
+  top: -20%;
+  left: 136%;
+}
+@media screen and (max-width: 1023px) {
+  .independence_cource_main .thum_box {
+    min-height: 660px;
+  }
+  .title_independence::after {
+    width: 360px;
+    top: -250%;
+    left: 40%;
+  }
+  .menu_list .independence_cource_main .title_price .kyozai {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 780px) {
+  .title_independence::after {
+    width: 282px;
+    height: 112px;
+    top: -230%;
+    left: 31%;
+  }
+  .independence_cource_main .present {
+    padding-top: 8px;
+  }
+}
+@media (max-width: 480px) {
+  .menu_list .independence_cource_main .title_price .kyozai {
+    margin-top: 24px;
+  }
+  .independence_cource .campaign_code {
+    margin-top: 26px;
+  }
+  .independence_cource_main .campaign_code {
+    margin-top: 14px;
   }
 }
