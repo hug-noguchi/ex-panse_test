@@ -1077,7 +1077,6 @@ menu_list
 .menu_list .menu_box .content .text_box {
   padding: 5%;
   color: var(--main-color);
-  flex: 1;
 }
 
 @media all and (min-width: 481) {
