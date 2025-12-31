@@ -198,26 +198,29 @@ add_action( 'pre_get_posts', 'change_posts_per_page' );
 
 
 // キャンペーン日時自動変更
-function campaign_end_date() {
-  $now = current_time('timestamp');
-  $deadline = strtotime('2025-12-31 23:59');
+function dynamic_campaign_info($atts) {
+    // デフォルトのクラスを「sp」に設定
+    $atts = shortcode_atts(array(
+        'class' => '',
+    ), $atts);
 
-  $is_before_deadline = ($now <= $deadline);
+    $month = (int)date_i18n('n');
+    $last_day = date_i18n('t');
 
-  $title   = $is_before_deadline ? '冬の特別キャンペーン' : '新春キャンペーン';
-  $until   = $is_before_deadline ? '12/31' : '1/31';
+    // タイトルの条件分岐
+    if ($month >= 3 && $month <= 5) { $t = "春の特別キャンペーン"; }
+    elseif ($month == 6) { $t = "特別キャンペーン"; }
+    elseif ($month >= 7 && $month <= 8) { $t = "夏の特別キャンペーン"; }
+    elseif ($month >= 9 && $month <= 10) { $t = "秋の特別キャンペーン"; }
+    elseif ($month >= 11 && $month <= 12) { $t = "冬の特別キャンペーン"; }
+    else { $t = "新春キャンペーン"; }
 
-  ob_start();
-  ?>
-  <p class="campaign">
-    <?php echo esc_html($title); ?> <br class="campaign_pc">期間限定
-    <span><?php echo esc_html($until); ?></span>まで
-  </p>
-  <?php
-  return ob_get_clean();
+    $d = $month . "/" . $last_day;
+
+    // HTMLを組み立て
+    return '<p class="campaign">' . $t . ' <br class="' . esc_attr($atts['class']) . '">期間限定<span>' . $d . '</span>まで</p>';
 }
-add_shortcode('campaign_date', 'campaign_end_date');
-
+add_shortcode('campaign_date', 'dynamic_campaign_info');
 
 //読了予測
 function get_time_to_content_read($content){
