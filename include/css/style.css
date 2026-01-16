@@ -7316,8 +7316,8 @@ ul {
   background-size: contain;
   content: "";
   display: inline-block;
-  width: 360px;
-  height: 315px;
+  width: 540px;
+  height: 170px;
   position: absolute;
   top: -20%;
   left: 136%;
@@ -7327,9 +7327,8 @@ ul {
     min-height: 660px;
   }
   .title_independence::after {
-    width: 360px;
     top: -250%;
-    left: 40%;
+    left: 32%;
   }
   .menu_list .independence_cource_main .title_price .kyozai {
     margin-top: 30px;
@@ -7337,10 +7336,10 @@ ul {
 }
 @media (max-width: 780px) {
   .title_independence::after {
-    width: 282px;
-    height: 112px;
-    top: -230%;
-    left: 31%;
+    width: 428px;
+    height: 140px;
+    top: -260%;
+    left: 24%;
   }
   .independence_cource_main .present {
     padding-top: 8px;
@@ -7355,5 +7354,11 @@ ul {
   }
   .independence_cource_main .campaign_code {
     margin-top: 14px;
+  }
+  .title_independence::after {
+    width: 260px;
+    height: 82px;
+    top: -210%;
+    left: 26%;
   }
 }
