@@ -75,7 +75,7 @@
 			</div>
 		</section>
 
-		<section class="container element js-animation about_ayurveda top_sec">
+		<!-- <section class="container element js-animation about_ayurveda top_sec">
 			<div class="coceptbox">
 				<div class="text_box">
 					<div class="about_ayurveda_box">
@@ -111,7 +111,7 @@
 					</a>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<!-- <section class="container element js-animation riji_message top_sec">
 			<div class="riji content_box" id="riji">
@@ -230,8 +230,18 @@
 
 					<div class="text_box domestic_box">
 						<p><strong>「開業まで学びたい！」</strong></p>
-						<p>自分だけのセラピストとして開業できる実践力と資格を身につけることができます。<br>
-						総合プロコースです！</p>
+						<p>
+							「未経験からでも高品質・高レベルのサロン開業を目指せます！」<br>
+							アーユルヴェーダの実践的な理論とエクスパンスこだわりのカウンセリング法、 伝統手技アヴィヤンガは、基礎から応用レベルまでを総合的に学べます。<br>
+							さらに、人気の高い【シローダーラー】手順、アーユルヴェーダオリジナル化粧品で行う【エクスパールフェイシャル】の全ての手技も。
+						</p>
+						<p>
+							創業15年、延べ5.5万人の実績を誇るエクスパンスの全てを学べる、本気の総合プロコースです。
+						</p>
+						<p>
+							また、ステップアップとして本場インドでのアーユルヴェーダ研修に参加することも可能です。（現地日本人スタッフ常駐・研修費用別途）<br>
+							インド現地でアーユルヴェーダの醍醐味であるパンチャカルマ【浄化プログラム】を受けることで、自分の身体や体調がみるみる改善していくのを体感できますので、ぜひご相談下さい。
+						</p>
 					</div>
 
 					<div class="btn_details">
