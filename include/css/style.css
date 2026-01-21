@@ -7306,13 +7306,13 @@ ul {
   min-height: 400px;
 }
 .independence_cource_main .thum_box {
-  min-height: 540px;
+  min-height: 630px;
 }
 .title_independence {
   position: relative;
 }
 .title_independence::after {
-  background: url(../../images/keyword_independence.png) no-repeat;
+  background: url(../../images/keyword_independence_v2.png) no-repeat;
   background-size: contain;
   content: "";
   display: inline-block;
@@ -7324,7 +7324,7 @@ ul {
 }
 @media screen and (max-width: 1023px) {
   .independence_cource_main .thum_box {
-    min-height: 660px;
+    min-height: 890px;
   }
   .title_independence::after {
     top: -250%;
@@ -7358,7 +7358,205 @@ ul {
   .title_independence::after {
     width: 260px;
     height: 82px;
-    top: -210%;
+    top: -160%;
     left: 26%;
+  }
+}
+
+/* 260120追加 */
+.independence_cource_main .domestic_point {
+  background: var(--main-bgcolor);
+  padding: 48px 56px;
+  margin: 2%;
+}
+.independence_cource_main .domestic_point .section_h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--main-color3);
+  padding: 0 0 20px 0;
+}
+.independence_cource_main .domestic_point .sub_text_box {
+  padding-bottom: 30px;
+}
+.independence_cource_main .point_list {
+  display: flex;
+  gap: 88px;
+  justify-content: center;
+}
+.independence_cource_main .point_list li {
+  width: 25.3%;
+}
+.independence_cource_main .point_list li .point_num {
+  text-align: center;
+}
+.independence_cource_main .point_list li .point_body h4 {
+  text-align: center;
+}
+.independence_cource_main .point_list li .point_body h4 .emphasis {
+  color: var(--main-buttoncolor);
+}
+.independence_cource_main .point_list li .point_body .point_text {
+  line-height: inherit;
+  margin-top: 10px;
+}
+
+@media (max-width: 1169px) and (min-width: 780px) {
+  .independence_cource_main .point_list li:nth-child(2) .point_body h4 {
+    letter-spacing: -2px;
+  }
+}
+
+@media (max-width: 900px) {
+  .independence_cource_main .domestic_point {
+    padding: 20px;
+  }
+  .independence_cource_main .point_list {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .independence_cource_main .point_list li {
+    width: 100%;
+  }
+}
+
+/* 260116 追加 */
+.independence_cource_main .title_independence {
+  font-size: 3.6rem !important;
+}
+.independence_cource_main .campaign {
+  font-size: 2.4rem !important;
+}
+.independence_cource_main .title_price .price {
+  font-size: 6.8rem !important;
+}
+.independence_cource_main .title_price .price span.price_label {
+  font-size: 1.6rem !important;
+  width: 90px !important;
+  height: 40px !important;
+  line-height: 40px !important;
+}
+.independence_cource_main .title_price .kyozai {
+  font-size: 16px !important;
+  background: #fff;
+  border-radius: 3px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width: fit-content;
+}
+.independence_cource_main .title_price .kyozai .notes {
+  color: var(--main-color);
+  margin-bottom: 0;
+  padding: 10px;
+  display: inline-block;
+}
+.independence_cource_main .title_price .kyozai .notes span {
+  color: var(--main-color3);
+  font-size: 24px;
+}
+.independence_cource_main .campaign_code p {
+  font-size: 14px !important;
+}
+.independence_cource_main .campaign_code p span {
+  font-size: 12px !important;
+}
+.independence_cource_main .present {
+  font-size: 18px !important;
+}
+
+@media (max-width: 1169px) {
+  .independence_cource_main .title_price .title_box .title {
+    font-size: 3rem !important;
+  }
+}
+
+@media (max-width: 780px) {
+  .independence_cource_main .title_price .title_box .title {
+    font-size: 2.6rem !important;
+  }
+  .independence_cource_main .campaign {
+    font-size: 1.8rem !important;
+  }
+  .independence_cource_main .title_price .price {
+    font-size: 6rem !important;
+  }
+  .independence_cource_main .title_price .price span.price_label {
+    font-size: 1.5rem !important;
+    width: 80px !important;
+    height: 32px !important;
+    line-height: 30px !important;
+  }
+  .menu_list .independence_cource_main .title_price .kyozai {
+    margin-top: 28px !important;
+  }
+  .independence_cource_main .title_price .kyozai .notes span {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .independence_cource_main .campaign_code {
+    margin-top: 10px !important;
+  }
+}
+
+.present02 {
+  font-weight: bold;
+  background-color: var(--main-buttoncolor);
+  width: fit-content;
+  border-radius: 3px;
+  padding: 8px 10px;
+  margin-top: 14px;
+}
+.present02 .present02_lead {
+  color: var(--main-bgcolor);
+  background-color: var(--main-color);
+  width: fit-content;
+  border-radius: 3px;
+  padding: 2px 14px;
+  margin: 0 auto;
+}
+.present02 .present02_sublead {
+  font-size: 2rem;
+  color: var(--main-color);
+  text-align: center;
+  padding: 3px 0;
+}
+.present02 .present02_sublead span {
+  font-size: 1.3rem;
+}
+.present02 .present02_list {
+  font-size: 1.4rem;
+}
+.present02 .present02_list li {
+  color: #fff;
+  font-weight: 600;
+  display: flex;
+  background-color: #fff;
+  border-radius: 3px;
+}
+.present02 .present02_list li:not(:last-child) {
+  margin-bottom: 6px;
+}
+.present02 .present02_list li p:nth-child(1) {
+  background-color: var(--main-color);
+  padding: 4px 8px;
+}
+.present02 .present02_list li p:nth-child(2) {
+  color: var(--main-color);
+  background-color: #fff;
+  padding: 4px 8px;
+}
+
+@media (max-width: 900px) {
+  .present02 .present02_list li {
+    flex-direction: column;
+  }
+  .present02 .present02_list li p:nth-child(1) {
+    text-align: center;
+  }
+  .present02 .present02_list li p:nth-child(2) {
+    line-height: 1.4em;
   }
 }
