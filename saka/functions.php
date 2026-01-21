@@ -217,8 +217,12 @@ function dynamic_campaign_info($atts) {
 
     $d = $month . "/" . $last_day;
 
-    // HTMLを組み立て
-    return '<p class="campaign">' . $t . ' <br class="' . esc_attr($atts['class']) . '">期間限定<span>' . $d . '</span>まで</p>';
+    $class_attr = '';
+    if (!empty($atts['class'])) {
+        $class_attr = ' class="' . esc_attr($atts['class']) . '"';
+    }
+
+    return '<p class="campaign">' . $t . ' <br' . $class_attr . '>期間限定<span>' . $d . '</span>まで</p>';
 }
 add_shortcode('campaign_date', 'dynamic_campaign_info');
 
