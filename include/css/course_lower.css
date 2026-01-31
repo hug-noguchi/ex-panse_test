@@ -989,42 +989,42 @@ h4.skill {
 .overview_campaign_top {
   border-bottom: 1px solid #d7cdcb;
 }
-#joing_messege {
+#joing_message {
   padding-top: 120px;
   margin-top: -120px;
   padding-bottom: 80px;
 }
-#joing_messege .joing_messege_list {
+#joing_message .joing_message_list {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 3%;
 }
-#joing_messege .joing_messege_list .joing_messege_item01 {
+#joing_message .joing_message_list .joing_message_item01 {
   width: 23%;
 }
-#joing_messege .joing_messege_list .joing_messege_item02 {
+#joing_message .joing_message_list .joing_message_item02 {
   width: 72%;
 }
-#joing_messege .btn_details {
+#joing_message .btn_details {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 481px) {
-  .local_navi_top ul a.joing_messege li span:before {
+  .local_navi_top ul a.joing_message li span:before {
     left: 8%;
   }
 }
 @media (max-width: 780px) {
-  #joing_messege {
+  #joing_message {
     padding-bottom: 60px;
   }
-  #joing_messege .joing_messege_list {
+  #joing_message .joing_message_list {
     flex-direction: column;
   }
-  #joing_messege .joing_messege_list .joing_messege_item01 {
+  #joing_message .joing_message_list .joing_message_item01 {
     width: 100%;
   }
-  #joing_messege .joing_messege_list .joing_messege_item02 {
+  #joing_message .joing_message_list .joing_message_item02 {
     width: 100%;
   }
 }
