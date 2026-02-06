@@ -45,6 +45,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/include/css/concept.css?<?php echo date('YmdHis'); ?>">
 	<?php
 	endif;
+	if ( is_page('sitemap') ) : ?>
+			<link rel="stylesheet" type="text/css" href="<?php bloginfo('url'); ?>/include/css/sitemap.css?<?php echo date('YmdHis'); ?>">
+	<?php
+	endif;
 	?>
 	<!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
