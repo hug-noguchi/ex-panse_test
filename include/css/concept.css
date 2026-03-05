@@ -78,6 +78,15 @@
     margin: 0;
   }
 
+  .member_store {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  .btn_member_store a {
+    font-size: 1.6rem;
+  }
+
   .concept_end {
     padding-top: 0;
     padding-bottom: 40px;
@@ -142,5 +151,262 @@ main .container .border_box {
 @media (max-width: 640px) {
   .section_h3 {
     line-height: 1.4;
+  }
+}
+
+/* 説明会から卒業後までの流れ */
+.school-flow {
+  margin: 80px 0;
+}
+.school-flow .section_h3 {
+  background-color: #380909;
+  padding: 13px 0 13px 20px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.school-flow-img {
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.school-flow-list {
+  background-color: #f6f3f1;
+  padding: 96px 170px 72px;
+  margin-top: -40px;
+  position: relative;
+  z-index: 1;
+}
+.school-flow-list li:not(:last-child) {
+  padding-bottom: 27px;
+  margin-bottom: 27px;
+  border-bottom: 2px dotted #967d7c;
+}
+.school-flow-list li p {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.school-flow-list li span {
+  display: flex;
+  align-items: center;
+}
+.school-flow-list li span::before {
+  content: "";
+  display: inline-block;
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 22px;
+  background: no-repeat center / contain;
+  background-image: url("../images/concept/icon-check-y.svg");
+}
+
+/* 多種多様のコースあり */
+.school-variety .section_h3 {
+  background-color: #380909;
+  padding: 13px 0 13px 20px;
+  margin-bottom: 40px;
+  color: #fff;
+}
+.school-variety-lead {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+.school-variety-txt {
+  width: 60%;
+}
+.school-variety-txt h4 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #dc4b00;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+.school-variety-img {
+  width: 38%;
+}
+.domestic-box {
+  margin-bottom: 40px;
+}
+.overseas-box {
+  margin-bottom: 56px;
+}
+.domestic-box-ttl,
+.overseas-box-ttl {
+  font-size: 22px;
+  font-weight: bold;
+  color: #380909;
+  border-bottom: 1px solid #c3b4b4;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+.domestic-box-ttl span,
+.overseas-box-ttl span {
+  display: flex;
+  align-items: center;
+}
+.domestic-box-ttl span::before,
+.overseas-box-ttl span::before {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  background-color: #380909;
+  border-radius: 50%;
+  margin-right: 0.4em;
+}
+.domestic-list,
+.overseas-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: stretch;
+}
+.domestic-list li,
+.overseas-list li {
+  width: calc((100% - (24px * 3)) / 4);
+  display: flex;
+  flex-direction: column;
+}
+.domestic-list li img,
+.domestic-list li picture img,
+.overseas-list li img,
+.overseas-list li picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+.domestic-txt,
+.overseas-txt {
+  text-align: center;
+  background-color: #f6f3f1;
+  padding: 24px 24px 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.domestic-subttl,
+.overseas-subttl {
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 24px;
+  margin-bottom: 18px;
+  border-bottom: 2px dotted #967d7c;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+.domestic-ttl,
+.overseas-ttl {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #dc4b00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3em;
+  flex-shrink: 0;
+}
+.btn_details_school {
+  color: var(--main-color) !important;
+  max-width: 425px;
+}
+@media (max-width: 787px) {
+  /* 説明会から卒業後までの流れ */
+  .school-flow {
+    margin: 40px 0;
+  }
+  .school-flow .section_h3 {
+    padding: 13px;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+  }
+  .school-flow-list {
+    padding: 62px 24px 32px;
+  }
+  .school-flow-list li:not(:last-child) {
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+  }
+  .school-flow-list li p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  /* 多種多様のコースあり */
+  .school-variety .section_h3 {
+    padding: 13px;
+    margin-bottom: 30px;
+  }
+  .school-variety-lead {
+    gap: 24px;
+    margin-bottom: 30px;
+    flex-direction: column-reverse;
+  }
+  .school-variety-txt {
+    width: 100%;
+  }
+  .school-variety-txt h4 {
+    line-height: 1.5;
+  }
+  .school-variety-img {
+    width: 100%;
+  }
+  .domestic-box {
+    margin-bottom: 30px;
+  }
+  .overseas-box {
+    margin-bottom: 30px;
+  }
+  .domestic-box-ttl,
+  .overseas-box-ttl {
+    font-size: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+  }
+  .domestic-box-ttl span::before,
+  .overseas-box-ttl span::before {
+    margin-right: 0.2em;
+  }
+  .domestic-list,
+  .overseas-list {
+    gap: 14px;
+    justify-content: flex-start;
+  }
+  .domestic-list li,
+  .overseas-list li {
+    width: calc((100% - 15px) / 2);
+  }
+  .domestic-txt,
+  .overseas-txt {
+    padding: 16px 12px 10px;
+    letter-spacing: -0.6px;
+  }
+  .domestic-subttl,
+  .overseas-subttl {
+    font-size: 12.5px;
+    padding-bottom: 16px;
+    margin-bottom: 10px;
+  }
+  .domestic-ttl,
+  .overseas-ttl {
+    font-size: 16px;
+    min-height: 4em;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 640px) {
+  .concept_image .concept_image_box {
+    display: flex;
+    width: 100%;
   }
 }
