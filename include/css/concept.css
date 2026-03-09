@@ -200,7 +200,7 @@ main .container .border_box {
   height: 32px;
   margin-right: 22px;
   background: no-repeat center / contain;
-  background-image: url("../images/concept/icon-check-y.svg");
+  background-image: url("/images/concept/icon-check-y.svg");
 }
 
 /* 多種多様のコースあり */
