@@ -72,7 +72,6 @@
 				</article>
 
 				<article class="content menu3 independence_cource independence_cource_main">
-
 					<a href="<?php bloginfo('url'); ?>/menu_menu3/">
 						<div class="thum_box">
 							<div class="title_price">
@@ -181,7 +180,6 @@
 							</li>
 						</ol>
 					</div>
-
 					<div class="btn_details">
 						<a href="/menu_menu3/" class="btn_ao_b">
 							<span class="b__text">詳しく見る</span>
@@ -331,6 +329,7 @@
 										<span class="price_label">1名様</span>
 										<span class="price_text">¥<span class="price_line">320,000</span></span>
 									</p>
+									<p class="overview_campaign_note">※募集を締め切りいたしました。<br class="sp">2026年は10月出発分より募集いたします。</p>
 							</div>
 						</div>
 					</a>
@@ -341,186 +340,99 @@
 					</div>
 				</article>
 
-				<article class="main_content stepup_top">
+				<article class="main_content top_stepup">
 					<div class="element js-animation">
-						<h3 class="section_h3 stepup_title">アーユルヴェーダ<br class="sp"><span class="left_sp">ステップアップコース</span></h3>
+						<h3 class="section_h3">アーユルヴェーダ <br class="sp">ステップアップコース</h3>
 						<div class="sub_text_box">
 							<p>セラピストとしてさらなる高みを目指したい方にオススメの、3つの短時間コースです。<br>
 							セラピスト養成講座コースとステップアップコースを同時に受講すると、より施術の幅を拡げることができます。</p>
 						</div>
-						<div class="new_courses">
-							<div class="new_courses_box element js-animation">
-								<ul class="new_courses_list">
-									<li>
-										<a href="/course/shirodhara">
-											<div class="new_courses_list_sp">
-												<div class="thum_box">
-													<img src="<?php bloginfo('url'); ?>/images/course/new_courses_01.jpg" alt="シローダーラー">
-												</div>
-												<div class="new_courses_list_text">
-													<p class="new_courses_title">シローダーラー</p>
-													<div class="course_kinds">
-														<ul>
-															<li>体験1回</li>
-															<li>入門コース</li>
-															<li>上級コース</li>
-														</ul>
-													</div>
-												</div>
+
+						<div class="stepupmenu_box element js-animation">
+							<article class="content stepup1">
+								<a href="<?php bloginfo('url'); ?>/menu_stepup#step1_link">
+									<div class="thum_box">
+										<div class="title_price">
+											<div class="title_box">
+												<p class="title">
+													<span>究極の癒し・脳のトリートメントを学ぶ</span><br>
+													シローダーラーコース
+												</p>
 											</div>
-										</a>
-									</li>
-									<li>
-										<a href="/course/facial/">
-											<div class="new_courses_list_sp">
-												<div class="thum_box">
-													<img src="<?php bloginfo('url'); ?>/images/course/new_courses_02.jpg" alt="フェイシャル">
-												</div>
-												<div class="new_courses_list_text">
-													<p class="new_courses_title">フェイシャル</p>
-													<div class="course_kinds">
-														<ul>
-															<li>体験1回</li>
-															<li>入門コース</li>
-															<li>上級コース</li>
-														</ul>
-													</div>
-												</div>
+											<p class="price">
+												<span class="price_label">受講料</span><span class="price_text">&yen;85,800</span>
+											</p>
+											<p class="kyozai">
+												<span class="notes">（ダーラポット+オイル代込）</span>
+											</p>
+										</div>
+									</div>
+								</a>
+								<p class="courese_detail">アーユルヴェーダ・トリートメントの基本的なテクニックと身体を理解した上で学べる実技内容、また、本場インドのカリキュラムをもとに専門知識を習得できるコースです。</p>
+								<div class="btn_details">
+									<a href="/menu_stepup/" class="btn_ao_b">
+										<span class="b__text">詳しく見る</span>
+									</a>
+								</div>
+							</article>
+
+							<article class="content stepup2">
+								<a href="<?php bloginfo('url'); ?>/menu_stepup#step2_link">
+									<div class="thum_box">
+										<div class="title_price">
+											<div class="title_box">
+												<p class="title">
+													<span>しわ・むくみなどの解消法を学ぶ</span><br>
+													フェイシャルコース
+												</p>
 											</div>
-										</a>
-									</li>
-									<li>
-										<a href="/course/creambath/">
-											<div class="new_courses_list_sp">
-												<div class="thum_box">
-													<img src="<?php bloginfo('url'); ?>/images/course/new_courses_03.jpg" alt="クリームバス">
-												</div>
-												<div class="new_courses_list_text">
-													<p class="new_courses_title">クリームバス</p>
-													<div class="course_kinds">
-														<ul>
-															<li>体験1回</li>
-															<li>入門コース</li>
-															<li>上級コース</li>
-														</ul>
-													</div>
-												</div>
+											<p class="price">
+												<span class="price_label">受講料</span><span class="price_text">&yen;96,800</span><span class="notes"></span>
+											</p>
+										</div>
+									</div>
+								</a>
+								<p class="courese_detail">
+									スチーマーや機械を一切使わず、アーユルヴェーダだからこそすべてオールハンドです！<br>
+									お客様が喜んでリピートして頂けるテクニックを学べます。
+								</p>
+								<div class="btn_details">
+									<a href="/menu_stepup/" class="btn_ao_b">
+										<span class="b__text">詳しく見る</span>
+									</a>
+								</div>
+							</article>
+
+							<article class="content stepup3">
+								<a href="<?php bloginfo('url'); ?>/menu_stepup#step3_link">
+									<div class="thum_box">
+										<div class="title_price">
+											<div class="title_box">
+												<p class="title">
+													<span>さらに専門的にじっくり学ぶ</span><br>
+													セラピストとして<br>大切なこと
+												</p>
 											</div>
-										</a>
-									</li>
-									<li>
-										<a href="/course/hotstone/">
-											<div class="new_courses_list_sp">
-												<div class="thum_box">
-													<img src="<?php bloginfo('url'); ?>/images/course/new_courses_04.jpg" alt="ホットストーン">
-												</div>
-												<div class="new_courses_list_text">
-													<p class="new_courses_title">ホットストーン</p>
-													<div class="course_kinds">
-														<ul>
-															<li>体験1回</li>
-															<li>入門コース</li>
-															<li>上級コース</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="/course/ayurhand/">
-											<div class="new_courses_list_sp">
-												<div class="thum_box">
-													<img src="<?php bloginfo('url'); ?>/images/course/new_courses_05.jpg" alt="アユルハンド">
-												</div>
-												<div class="new_courses_list_text">
-													<p class="new_courses_title">
-														<span>特別講座</span>アユルハンド
-													</p>
-													<div class="course_kinds">
-														<ul>
-															<li>体験1回</li>
-															<li>上級コース</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="/course/jamubalinese/">
-											<div class="new_courses_list_sp">
-												<div class="thum_box">
-													<img src="<?php bloginfo('url'); ?>/images/course/new_courses_06.jpg" alt="ジャムゥバリニーズ">
-												</div>
-												<div class="new_courses_list_text">
-													<p class="new_courses_title">ジャムゥバリニーズ</p>
-													<div class="course_kinds">
-														<ul>
-															<li>体験1回</li>
-															<li>上級コース</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="/course/herbball/">
-											<div class="new_courses_list_sp">
-												<div class="thum_box">
-													<img src="<?php bloginfo('url'); ?>/images/course/new_courses_07.jpg" alt="ハーブボール">
-												</div>
-												<div class="new_courses_list_text">
-													<p class="new_courses_title">ハーブボール</p>
-													<div class="course_kinds">
-														<ul>
-															<li>体験1回</li>
-															<li>入門コース</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="/course/headmaster/">
-											<div class="new_courses_list_sp">
-												<div class="thum_box">
-													<img src="<?php bloginfo('url'); ?>/images/course/new_courses_08.jpg" alt="ヘッドマスター">
-												</div>
-												<div class="new_courses_list_text">
-													<p class="new_courses_title">ヘッドマスター</p>
-													<div class="course_kinds">
-														<ul>
-															<li>体験1回</li>
-															<li>入門コース</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</li>
-									<li>
-										<a href="">
-											<div class="new_courses_list_sp">
-												<div class="thum_box">
-													<img src="<?php bloginfo('url'); ?>/images/course/new_courses_09.jpg" alt="カウンセリング">
-												</div>
-												<div class="new_courses_list_text">
-													<p class="new_courses_title">カウンセリング</p>
-													<div class="course_kinds">
-														<ul>
-															<li>体験1回</li>
-															<li>入門コース</li>
-														</ul>
-													</div>
-												</div>
-											</div>
-										</a>
-									</li>
-								</ul>
-							</div>
+											<p class="price">
+												<span class="price_label">受講料</span><span class="price_text">&yen;85,800</span><span class="notes"></span>
+											</p>
+										</div>
+									</div>
+								</a>
+								<p class="courese_detail">
+									本格的なトリートメント実技をもっと学びたい方に、セラピストを続けるためにも必要な事を伝えます。
+								</p>
+								<div class="btn_details">
+									<a href="/menu_stepup/" class="btn_ao_b">
+										<span class="b__text">詳しく見る</span>
+									</a>
+								</div>
+							</article>
+						</div>
+						<div class="btn_details btn_course_list">
+							<a href="/course/" class="btn_ao_b">
+								<span class="b__text">コース⼀覧を見る</span>
+							</a>
 						</div>
 					</div>
 				</article>

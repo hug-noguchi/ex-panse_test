@@ -1009,6 +1009,12 @@ h4.skill {
 #joing_message .btn_details {
   margin-bottom: 0;
 }
+.taiken .company_detail {
+  margin-bottom: 10px;
+}
+.detail_note {
+  margin-bottom: 40px;
+}
 @media only screen and (min-width: 481px) {
   .local_navi_top ul a.joing_message li span:before {
     left: 8%;
@@ -1025,6 +1031,9 @@ h4.skill {
     width: 100%;
   }
   #joing_message .joing_message_list .joing_message_item02 {
+    width: 100%;
+  }
+  video {
     width: 100%;
   }
 }
