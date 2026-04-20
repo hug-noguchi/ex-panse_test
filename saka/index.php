@@ -1,5 +1,47 @@
 <?php get_header(); ?>
+<style>
+	.price_text.old_price {
+    position: relative;
+    text-decoration: none;
+		font-size: 5rem;
+	}
 
+	.price_text.old_price::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 7px;
+    border-top: 2px solid #c12023;
+    border-bottom: 2px solid #c12023;
+    pointer-events: none;
+	}
+
+	.campaign_yajirushi {
+		margin: 0 5px;
+	}
+
+	@media screen and (max-width: 768px) {
+		.price_text.old_price {
+			font-size: 4rem;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+    .campaign_yajirushi {
+			font-size: 3rem;
+			margin: 0 3px 0 0;
+    }
+	}
+
+	@media screen and (max-width: 480px) {
+		.menu_list .independence_cource_main .title_price .kyozai {
+			width: 100%;
+			text-align: center;
+			letter-spacing: 1px;
+		}
+	}
+</style>
 	<div id="main_img"></div>
 
 	<main class="top">
@@ -85,18 +127,11 @@
 								<?php echo do_shortcode('[campaign_date]'); ?>
 								<p class="price">
 									<span class="price_label">受講料</span>
-									<span class="price_text">&yen;<span class="price_line">780,000</span></span>
+									<span class="price_text old_price">&yen;<span class="price_line">630,000</span></span><span class="campaign_yajirushi">→</span><span class="price_text">&yen;<span class="price_line">567,000</span></span></span>
 								</p>
 								<p class="kyozai">
-									<span class="notes">教材+ドーシャ別オイル代+開業セット商材込<span>（10万円相当）</span><br class="sp">/協会会員費<span>（初年度無料）</span></span>
+									<span class="notes"><span>10万円</span>の開業セットオプション</span>
 								</p>
-								<div class="campaign_code">
-									<p>
-										10%割引　『キャンペーンコード:expa2025』<br>
-										コード入力で78,000OFF！</br>
-										<span>※お申し込みの際にこちらのキャンペーンコードをご入力ください。</span>
-									</p>
-								</div>
 								<div class="present02">
 									<p class="present02_lead">当日お申込み</p>
 									<p class="present02_sublead">2大特典(50,000円相当)</p>
@@ -203,15 +238,6 @@
 									<span class="price_label">受講料</span>
 									<span class="price_text">&yen;<span class="price_line">252,000</span></span>
 								</p>
-								<p class="kyozai pc">
-									<span class="notes">（教材費+ドーシャ別オイル代込）/協会会員費（初年度無料）</span>
-								</p>
-								<div class="campaign_code">
-									<p>
-										10%割引　『キャンペーンコード:expa2025』<br>
-										<span>※お申し込みの際にこちらのキャンペーンコードをご入力ください。</span>
-									</p>
-								</div>
 							</div>
 						</div>
 					</a>
@@ -285,15 +311,6 @@
 									<p class="price campaign_price">
 										<span class="price_text">&yen;<span class="price_line">432,000</span></span>
 									</p>
-									<p class="kyozai">
-										<span class="notes">（教材+ドーシャ別オイル代込）/協会会員費（初年度無料）</span>
-									</p>
-									<div class="campaign_code">
-										<p>
-											10%割引　『キャンペーンコード:expa2025』<br>
-											<span>※お申し込みの際にこちらのキャンペーンコードをご入力ください。</span>
-										</p>
-									</div>
 									<p class="present">※当日お申込み特典はアヴィヤンガ90分プレゼントします！</p>
 								</div>
 							</div>
