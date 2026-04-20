@@ -161,7 +161,7 @@ heading
 
 @media all and (max-width: 640px) {
   .faq {
-    padding: 40px 0 0;
+    padding: 40px 0;
   }
 }
 
@@ -197,6 +197,10 @@ heading
   align-items: center;
   cursor: pointer;
   position: relative;
+}
+
+.faq_answer_link a:hover {
+  opacity: 0.7;
 }
 
 @media all and (max-width: 640px) {

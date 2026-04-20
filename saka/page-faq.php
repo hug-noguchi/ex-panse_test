@@ -60,7 +60,12 @@
 					<dt class="accordion-title"><span class="q">Q</span>オンライン受講は可能ですか？</dt>
 					<dd class="accordion-box">
 						<div class="faq_answer">
-							<span class="a">A</span>座学のみオンライン受講が可能です。<br>実技はご来校いただきマンツーマンにて直接指導となります。
+							<span class="a">A</span>
+							<div class="faq_answer_link">
+								座学のみオンライン受講が可能です。<br>
+								実技はご来校いただきマンツーマンにて直接指導となります。<br>
+								<a href="/menu_online/">独立・開業におすすめのコースはこちら</a>
+							</div>
 						</div>
 					</dd>
 				</dl>
@@ -108,7 +113,11 @@
 					<dt class="accordion-title"><span class="q">Q</span>卒業後すぐに開業できますか？</dt>
 					<dd class="accordion-box">
 						<div class="faq_answer">
-							<span class="a">A</span>はい。開業セット（ベッド、タオル、オイル、備品等）が付いているコースのため、<br>通学中から物件決めや準備を進めれば、卒業後すぐにサロン開業が可能です。<br>未経験の場合は、3ヶ月から半年ほど練習を積み重ねながらサロン開業準備を進めていき、<br>万全の準備をしてからスタートすることをお勧めいたしております。
+							<span class="a">A</span>
+							<div class="faq_answer_link">
+								はい。開業セット（ベッド、タオル、オイル、備品等）が付いているコースのため、<br>通学中から物件決めや準備を進めれば、卒業後すぐにサロン開業が可能です。<br>未経験の場合は、3ヶ月から半年ほど練習を積み重ねながらサロン開業準備を進めていき、<br>万全の準備をしてからスタートすることをお勧めいたしております。<br>
+								<a href="/menu_menu3/">独立・開業におすすめのコースはこちら</a>
+							</div>
 						</div>
 					</dd>
 				</dl>
@@ -132,7 +141,11 @@
 					<dt class="accordion-title"><span class="q">Q</span>資格や証明書はもらえますか？</dt>
 					<dd class="accordion-box">
 						<div class="faq_answer">
-							<span class="a">A</span>エクスパンス・アーユルヴェーダセラピスト協会のディプロマを発行しております。
+							<span class="a">A</span>
+							<div class="faq_answer_link">
+								エクスパンス・アーユルヴェーダセラピスト協会のディプロマを発行しております。<br>
+								<a href="/concept#completion">ディプロマについて詳しくはこちら</a>
+							</div>
 						</div>
 					</dd>
 				</dl>
