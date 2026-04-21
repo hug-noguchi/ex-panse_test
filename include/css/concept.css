@@ -410,3 +410,15 @@ main .container .border_box {
     width: 100%;
   }
 }
+
+#completion {
+  margin-top: -164px;
+  padding-top: 204px;
+}
+
+@media (max-width: 640px) {
+  #completion {
+    margin-top: -60px;
+    padding-top: 100px;
+  }
+}
