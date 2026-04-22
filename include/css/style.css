@@ -7266,7 +7266,7 @@ ul {
     height: 32px;
     line-height: 30px;
   }
-  .menu_list .independence_cource_main .title_price .kyozai {
+  .independence_cource_main .title_price .kyozai {
     margin-top: 28px;
   }
   .independence_cource_main .title_price .kyozai .notes span {
@@ -7288,7 +7288,7 @@ ul {
     top: -250%;
     left: 32%;
   }
-  .menu_list .independence_cource_main .title_price .kyozai {
+  .independence_cource_main .title_price .kyozai {
     margin-top: 30px;
   }
 }
@@ -7304,7 +7304,7 @@ ul {
   }
 }
 @media (max-width: 480px) {
-  .menu_list .independence_cource_main .title_price .kyozai {
+  .independence_cource_main .title_price .kyozai {
     margin-top: 24px;
   }
   .independence_cource .campaign_code {
@@ -7390,16 +7390,7 @@ ul {
   width: fit-content;
   border-radius: 3px;
   padding: 2px 14px;
-  margin: 0 auto;
-}
-.present02 .present02_sublead {
-  font-size: 2rem;
-  color: var(--main-color);
-  text-align: center;
-  padding: 3px 0;
-}
-.present02 .present02_sublead span {
-  font-size: 1.3rem;
+  margin: 0 auto 6px;
 }
 .present02 .present02_list {
   font-size: 1.4rem;
@@ -7951,5 +7942,53 @@ ul {
   #stepup #step2_link .section_h2,
   #stepup #step3_link .section_h2 {
     margin-bottom: 20px;
+  }
+}
+
+/* 26/4/22 追加 */
+.independence_cource_main .price_text.old_price {
+  position: relative;
+  text-decoration: none;
+  font-size: 5rem;
+}
+
+.independence_cource_main .price_text.old_price::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 7px;
+  border-top: 2px solid #c12023;
+  border-bottom: 2px solid #c12023;
+  pointer-events: none;
+}
+
+.independence_cource_main .campaign_yajirushi {
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .independence_cource_main .price_text.old_price {
+    font-size: 4rem;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .independence_cource_main .price_text.old_price::after {
+    top: 38%;
+  }
+
+  .independence_cource_main .campaign_yajirushi {
+    font-size: 3rem;
+    margin: 0 3px 0 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .independence_cource_main .title_price .kyozai {
+    width: 100%;
+    text-align: center;
+    letter-spacing: 1px;
   }
 }
