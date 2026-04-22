@@ -1,47 +1,4 @@
 <?php get_header(); ?>
-<style>
-	.price_text.old_price {
-    position: relative;
-    text-decoration: none;
-		font-size: 5rem;
-	}
-
-	.price_text.old_price::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    height: 7px;
-    border-top: 2px solid #c12023;
-    border-bottom: 2px solid #c12023;
-    pointer-events: none;
-	}
-
-	.campaign_yajirushi {
-		margin: 0 5px;
-	}
-
-	@media screen and (max-width: 768px) {
-		.price_text.old_price {
-			font-size: 4rem;
-			display: inline-block;
-			margin-bottom: 20px;
-		}
-    .campaign_yajirushi {
-			font-size: 3rem;
-			margin: 0 3px 0 0;
-    }
-	}
-
-	@media screen and (max-width: 480px) {
-		.menu_list .independence_cource_main .title_price .kyozai {
-			width: 100%;
-			text-align: center;
-			letter-spacing: 1px;
-		}
-	}
-</style>
 	<div id="main_img"></div>
 
 	<main class="top">
@@ -120,7 +77,7 @@
 								<div class="title_box">
 									<p class="time"><picture><source type="image/webp" srcset="<?php bloginfo('url'); ?>/images/hour35.webp"><img src="<?php bloginfo('url'); ?>/images/hour35.png" alt="jmr"></picture></p>
 									<p class="title title_independence">
-										<span>すぐにスタートできる開業商材セット付き</span><br>
+										<span>すぐにスタートできる開業商材オプションセット</span><br>
 											独立・開業コース
 									</p>
 								</div>
@@ -130,19 +87,14 @@
 									<span class="price_text old_price">&yen;<span class="price_line">630,000</span></span><span class="campaign_yajirushi">→</span><span class="price_text">&yen;<span class="price_line">567,000</span></span></span>
 								</p>
 								<p class="kyozai">
-									<span class="notes"><span>10万円</span>の開業セットオプション</span>
+									<span class="notes"><span>10万円</span>の開業商材オプションセット</span>
 								</p>
 								<div class="present02">
 									<p class="present02_lead">当日お申込み</p>
-									<p class="present02_sublead">2大特典(50,000円相当)</p>
 									<ul class="present02_list">
 										<li>
-											<p>特典①</p>
+											<p>特典</p>
 											<p>全身+シローダーラー120分体験トリートメントをプレゼントします！</p>
-										</li>
-										<li>
-											<p>特典②</p>
-											<p>オリジナル化粧品エクスパール4本セットをプレゼントします！</p>
 										</li>
 									</ul>
 								</div>
