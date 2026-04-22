@@ -205,7 +205,14 @@ function dynamic_campaign_info($atts) {
     ), $atts);
 
     $month = (int)date_i18n('n');
-    $last_day = date_i18n('t');
+    // $last_day = date_i18n('t');
+
+    if ($month == 4) {
+        $d = "5/31";
+    } else {
+        $last_day = date_i18n('t');
+        $d = $month . "/" . $last_day;
+    }
 
     // タイトルの条件分岐
     if ($month >= 3 && $month <= 5) { $t = "春の特別キャンペーン"; }
@@ -215,7 +222,7 @@ function dynamic_campaign_info($atts) {
     elseif ($month >= 11 && $month <= 12) { $t = "冬の特別キャンペーン"; }
     else { $t = "新春キャンペーン"; }
 
-    $d = $month . "/" . $last_day;
+    // $d = $month . "/" . $last_day;
 
     $class_attr = '';
     if (!empty($atts['class'])) {
